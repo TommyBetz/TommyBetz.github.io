@@ -1,5 +1,6 @@
 # The Effect of Federal Reserve Interest Rate Changes on the Stock Market
-
+> What happens to the Stock Market before and after the Federal Reserve changes their interest rates.
+> 
 ## Column Explanation
 - Date
 - - Date of interest change
