@@ -1,8 +1,8 @@
-# Project Name
+# The Effect of Federal Reserve Interest Rate Changes on the Stock Market
 > Outline a brief description of your project.
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
-## Table of Contents
+## Column Explanation
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
