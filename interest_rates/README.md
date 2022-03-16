@@ -1,6 +1,6 @@
 # The Effect of Federal Reserve Interest Rate Changes on the Stock Market
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+<!-- > Outline a brief description of your project.-->
+<!-- > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. --> -->
 
 ## Column Explanation
 * [General Info](#general-information)
@@ -16,8 +16,10 @@
 <!-- * [License](#license) -->
 
 
-## General Information
-- Provide general information about your project here.
+## Column Explanation
+- Interest: Change in interest rate
+- Interest
+- - Test
 - What problem does it (intend to) solve?
 - What is the purpose of your project?
 - Why did you undertake it?
