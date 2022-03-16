@@ -1,20 +1,4 @@
 # The Effect of Federal Reserve Interest Rate Changes on the Stock Market
-<!-- > Outline a brief description of your project.
-<!-- > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. --> -->
-
-## Column Explanation
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
-<!-- * [License](#license) -->
-
 
 ## Column Explanation
 - Date
