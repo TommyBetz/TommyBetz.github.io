@@ -18,6 +18,7 @@
 
 ## Column Explanation
 - Date
+
 -- Date of interest change
 -- Top row is date of last update
 - Interest
