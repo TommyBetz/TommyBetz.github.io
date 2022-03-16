@@ -1,5 +1,5 @@
 # The Effect of Federal Reserve Interest Rate Changes on the Stock Market
-<!-- > Outline a brief description of your project.-->
+<!-- > Outline a brief description of your project.
 <!-- > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. --> -->
 
 ## Column Explanation
@@ -17,12 +17,26 @@
 
 
 ## Column Explanation
-- Interest: Change in interest rate
+- Date
+- - Date of interest change
+- - Top row is date of last update
 - Interest
-- - Test
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
+- - Change in interest rate
+- Change
+- - Percentage change in interest rate
+- Rate_new
+- - Interest rate after change
+- 12M_inflation
+- - Monthly CPI (Consumer Price Index) value compared to 12 months prior 
+- VIX
+- - VIX at Date
+- 52W_high
+- - the closing price on the day of the interest rate change compared the highest price in the prior 52 weeks
+- 52W_low
+- - the closing price on the day of the interest rate change compared the lowest price in the prior 52 weeks
+- - Stock price at the 
+- 1M_before
+- - the closing price on the day of the interest rate change compared to 1 month before
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
