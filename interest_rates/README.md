@@ -18,13 +18,12 @@
 
 ## Column Explanation
 - Date
-
--- Date of interest change
--- Top row is date of last update
+- - Date of interest change
+- - Top row is date of last update
 - Interest
--- Change in interest rate
-Change
-- Percentage change in interest rate
+- - Change in interest rate
+- Change
+-  Percentage change in interest rate
 - Rate_new
 - - Interest rate after change
 - 12M_inflation
