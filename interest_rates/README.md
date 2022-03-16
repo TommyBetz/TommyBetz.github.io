@@ -30,7 +30,7 @@ Change
 - - Monthly CPI (Consumer Price Index) value compared to 12 months prior 
 - VIX
 - - VIX at Date
-- 52W_high
+- 52W_highdd
 - - the closing price on the day of the interest rate change compared the highest price in the prior 52 weeks
 - 52W_low
 - - the closing price on the day of the interest rate change compared the lowest price in the prior 52 weeks
