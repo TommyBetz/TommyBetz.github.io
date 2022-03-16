@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>avg_dips_ATH_intrayear_3</title>
+<title>technical_analysis</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13127,35 +13127,23 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold"># Technical Analysis
+</span>## Timeframe for Calculations: last 2 years
+## Work in progress, documentation and formatting pending
+## Last updated: 2022-03-11 
+
+</pre>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
@@ -13166,27 +13154,9 @@ div#notebook {
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold"># % Dips from an ATH to its Lowest Price until Recovery
-</span>## Timeframe: 2000 to now
-## Numbers are basded on Close Price
-## Last updated: 2022-03-15 
-
-<span class="ansi-bold">## NASDAQ Composite
-</span>Highest Closing: 16057.44
-Highest Date: 2021-11-19
-Lowest Closing: 12795.55
-Lowest Date: 2022-03-08
-Max Drop %: -20.31 %
-Current Drop % -19.36 %
-# Times per Year does the Current Drop % happen: 0.38 x (on average once every 2.6 years)
-
-
-<span class="ansi-bold">### Summary
-</span>#### count_section: # of times drop % stayed within the range in drop_%
-#### avg_recovery_days: # of days it took for price to recover to prior ATH level
-#### avg_count_per_year: # times per Year does the drop_% happen
-#### count_all: # of times drop % was at least within the range in drop_% (cumsum)
-#### avg_count_per_year_all: # times per Year does the drop % happen
+<pre><span class="ansi-bold">## Buy/Sell Recommendations
+</span>### The custom algorithm finds the best parameters for EMA and RSI.
+### For RSI 30/70, the algorithm buys when RSI is 30, and sells when RSI is 70.
 </pre>
 </div>
 </div>
@@ -13213,125 +13183,68 @@ Current Drop % -19.36 %
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
+      <th>stock</th>
+      <th>EMA</th>
+      <th>RSI</th>
+      <th>RSI 30/70</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>0 to 3</td>
-      <td>all</td>
-      <td>266</td>
-      <td>6</td>
-      <td>0.02</td>
-      <td>345</td>
-      <td>16.43</td>
+      <td>SPY</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>3 to 6</td>
-      <td>all</td>
-      <td>40</td>
-      <td>24</td>
-      <td>0.07</td>
-      <td>79</td>
-      <td>3.76</td>
+      <td>QQQ</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>6 to 9</td>
-      <td>all</td>
-      <td>16</td>
-      <td>50</td>
-      <td>0.14</td>
-      <td>39</td>
-      <td>1.86</td>
+      <td>DIA</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>9 to 12</td>
-      <td>all</td>
-      <td>7</td>
-      <td>76</td>
-      <td>0.21</td>
-      <td>23</td>
-      <td>1.10</td>
+      <td>AAPL</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>12 to 15</td>
-      <td>all</td>
-      <td>4</td>
-      <td>162</td>
-      <td>0.44</td>
-      <td>16</td>
-      <td>0.76</td>
+      <td>AMZN</td>
+      <td>BUY</td>
+      <td>neutral</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>15 to 20</td>
-      <td>all</td>
-      <td>4</td>
-      <td>255</td>
-      <td>0.70</td>
-      <td>12</td>
-      <td>0.57</td>
+      <td>MSFT</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>20 to 25</td>
-      <td>all</td>
-      <td>3</td>
-      <td>73</td>
-      <td>0.20</td>
-      <td>8</td>
-      <td>0.38</td>
+      <td>BTC-USD</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>25 to 30</td>
-      <td>all</td>
-      <td>0</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>5</td>
-      <td>0.24</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>30 to 40</td>
-      <td>all</td>
-      <td>1</td>
-      <td>110</td>
-      <td>0.30</td>
-      <td>5</td>
-      <td>0.24</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>40 to 50</td>
-      <td>all</td>
-      <td>1</td>
-      <td>364</td>
-      <td>1.00</td>
-      <td>4</td>
-      <td>0.19</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>50 to 100</td>
-      <td>all</td>
-      <td>3</td>
-      <td>358</td>
-      <td>0.98</td>
-      <td>3</td>
-      <td>0.14</td>
+      <td>ETH-USD</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
   </tbody>
 </table>
@@ -13339,14 +13252,24 @@ Current Drop % -19.36 %
 </div>
 
 </div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
 
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-
-<span class="ansi-bold">### Largest % Drops from ATH
-</span></pre>
+<pre><span class="ansi-bold">## Annual Rate of Return (ARR) from each Strategy (within last 2 years)
+</span>### EMA, RSI, RSI 30/70 performance is based on trading recommendations from the custom algorithm
+### Buy and Hold: Bought the equity 2 years ago and hold until now
+### DCA (Dollar Cost Average): Bought an equal $ amount every day for the last 2 years and hold until now
+</pre>
 </div>
 </div>
 
@@ -13372,197 +13295,86 @@ Current Drop % -19.36 %
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>ATH_close</th>
-      <th>ATH_date</th>
-      <th>ATH_recovery_date</th>
-      <th>ATH_recovery_time_days</th>
-      <th>Low_close</th>
-      <th>Low_date</th>
-      <th>days_until_low</th>
-      <th>drop_%</th>
-      <th>year</th>
+      <th>stock</th>
+      <th>EMA</th>
+      <th>RSI</th>
+      <th>RSI 30/70</th>
+      <th>Buy &amp; Hold</th>
+      <th>DCA</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>5048</td>
-      <td>2000-03-10</td>
-      <td>2001-01-03</td>
-      <td>299</td>
-      <td>2291</td>
-      <td>2001-01-02</td>
-      <td>298</td>
-      <td>54.60</td>
-      <td>2000</td>
+      <td>SPY</td>
+      <td>24%</td>
+      <td>32%</td>
+      <td>17%</td>
+      <td>25%</td>
+      <td>6%</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2859</td>
-      <td>2007-10-31</td>
-      <td>2009-01-06</td>
-      <td>433</td>
-      <td>1316</td>
-      <td>2008-11-20</td>
-      <td>386</td>
-      <td>53.97</td>
-      <td>2007</td>
+      <td>QQQ</td>
+      <td>36%</td>
+      <td>33%</td>
+      <td>1%</td>
+      <td>30%</td>
+      <td>4%</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2859</td>
-      <td>2001-01-24</td>
-      <td>2002-01-03</td>
-      <td>344</td>
-      <td>1423</td>
-      <td>2001-09-21</td>
-      <td>240</td>
-      <td>50.22</td>
-      <td>2001</td>
+      <td>DIA</td>
+      <td>19%</td>
+      <td>26%</td>
+      <td>19%</td>
+      <td>19%</td>
+      <td>4%</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2059</td>
-      <td>2002-01-04</td>
-      <td>2003-01-03</td>
-      <td>364</td>
-      <td>1114</td>
-      <td>2002-10-09</td>
-      <td>278</td>
-      <td>45.90</td>
-      <td>2002</td>
+      <td>AAPL</td>
+      <td>61%</td>
+      <td>55%</td>
+      <td>6%</td>
+      <td>49%</td>
+      <td>14%</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>9817</td>
-      <td>2020-02-19</td>
-      <td>2020-06-08</td>
-      <td>110</td>
-      <td>6860</td>
-      <td>2020-03-23</td>
-      <td>33</td>
-      <td>30.12</td>
-      <td>2020</td>
+      <td>AMZN</td>
+      <td>50%</td>
+      <td>31%</td>
+      <td>-5%</td>
+      <td>28%</td>
+      <td>-2%</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>8109</td>
-      <td>2018-08-29</td>
-      <td>2019-01-04</td>
-      <td>128</td>
-      <td>6192</td>
-      <td>2018-12-24</td>
-      <td>117</td>
-      <td>23.64</td>
-      <td>2018</td>
+      <td>MSFT</td>
+      <td>48%</td>
+      <td>43%</td>
+      <td>-1%</td>
+      <td>33%</td>
+      <td>9%</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>1652</td>
-      <td>2009-01-06</td>
-      <td>2009-04-09</td>
-      <td>93</td>
-      <td>1268</td>
-      <td>2009-03-09</td>
-      <td>62</td>
-      <td>23.22</td>
-      <td>2009</td>
+      <td>BTC-USD</td>
+      <td>97%</td>
+      <td>154%</td>
+      <td>3%</td>
+      <td>162%</td>
+      <td>42%</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>16057</td>
-      <td>2021-11-19</td>
-      <td>NaT</td>
-      <td>0</td>
-      <td>12795</td>
-      <td>2022-03-08</td>
-      <td>109</td>
-      <td>20.31</td>
-      <td>2021</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>2873</td>
-      <td>2011-04-29</td>
-      <td>2012-01-05</td>
-      <td>251</td>
-      <td>2335</td>
-      <td>2011-10-03</td>
-      <td>157</td>
-      <td>18.71</td>
-      <td>2011</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>2153</td>
-      <td>2004-01-26</td>
-      <td>2004-12-14</td>
-      <td>323</td>
-      <td>1752</td>
-      <td>2004-08-12</td>
-      <td>199</td>
-      <td>18.63</td>
-      <td>2004</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>5218</td>
-      <td>2015-07-20</td>
-      <td>2016-04-01</td>
-      <td>256</td>
-      <td>4266</td>
-      <td>2016-02-11</td>
-      <td>206</td>
-      <td>18.24</td>
-      <td>2015</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>2530</td>
-      <td>2010-04-23</td>
-      <td>2010-11-02</td>
-      <td>193</td>
-      <td>2091</td>
-      <td>2010-07-02</td>
-      <td>70</td>
-      <td>17.33</td>
-      <td>2010</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>2370</td>
-      <td>2006-04-19</td>
-      <td>2006-10-26</td>
-      <td>190</td>
-      <td>2020</td>
-      <td>2006-07-21</td>
-      <td>93</td>
-      <td>14.78</td>
-      <td>2006</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>1460</td>
-      <td>2003-01-14</td>
-      <td>2003-04-23</td>
-      <td>99</td>
-      <td>1271</td>
-      <td>2003-03-11</td>
-      <td>56</td>
-      <td>12.97</td>
-      <td>2003</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>2178</td>
-      <td>2004-12-30</td>
-      <td>2005-07-14</td>
-      <td>196</td>
-      <td>1904</td>
-      <td>2005-04-28</td>
-      <td>119</td>
-      <td>12.59</td>
-      <td>2004</td>
+      <td>ETH-USD</td>
+      <td>312%</td>
+      <td>308%</td>
+      <td>14%</td>
+      <td>338%</td>
+      <td>111%</td>
     </tr>
   </tbody>
 </table>
@@ -13570,14 +13382,28 @@ Current Drop % -19.36 %
 </div>
 
 </div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
 
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-
-<span class="ansi-bold">### Detailed View
-</span></pre>
+<pre><span class="ansi-bold">## Best EMA Parameters identified by custom Algorithm
+</span><span class="ansi-bold">### Parameters
+</span><span class="ansi-bold">#### Example with SPY
+</span>##### Buy when the stock price is 0 % below the 10 day EMA
+##### Sell when the stock price is 5 % above the 30 day EMA
+##### In the last 2 years there were 6 Buy and 5 Sell trades
+##### Current Buy Target Price: 425
+##### Current Sell Target Price: 456
+</pre>
 </div>
 </div>
 
@@ -13603,1185 +13429,113 @@ Current Drop % -19.36 %
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
+      <th>stock</th>
+      <th>buy_days</th>
+      <th>sell_days</th>
+      <th>buy_prctg</th>
+      <th>sell_prctg</th>
+      <th>buy_frequency</th>
+      <th>sell_frequency</th>
+      <th>buy_target_price</th>
+      <th>sell_target_price</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>50 to 100</td>
-      <td>all</td>
-      <td>3</td>
-      <td>358</td>
-      <td>0.98</td>
-      <td>3</td>
-      <td>0.14</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>50 to 100</td>
-      <td>2007</td>
-      <td>1</td>
-      <td>433</td>
-      <td>1.19</td>
-      <td>0</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>50 to 100</td>
-      <td>2001</td>
-      <td>1</td>
-      <td>344</td>
-      <td>0.94</td>
-      <td>1</td>
-      <td>1.00</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>50 to 100</td>
-      <td>2000</td>
-      <td>1</td>
-      <td>299</td>
-      <td>0.82</td>
-      <td>1</td>
-      <td>1.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>40 to 50</td>
-      <td>all</td>
-      <td>1</td>
-      <td>364</td>
-      <td>1.0</td>
-      <td>4</td>
-      <td>0.19</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>40 to 50</td>
-      <td>2002</td>
-      <td>1</td>
-      <td>364</td>
-      <td>1.0</td>
-      <td>3</td>
-      <td>3.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>30 to 40</td>
-      <td>all</td>
-      <td>1</td>
-      <td>110</td>
-      <td>0.3</td>
-      <td>5</td>
-      <td>0.24</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>30 to 40</td>
-      <td>2020</td>
-      <td>1</td>
-      <td>110</td>
-      <td>0.3</td>
-      <td>4</td>
-      <td>4.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>20 to 25</td>
-      <td>all</td>
-      <td>3</td>
-      <td>73</td>
-      <td>0.20</td>
-      <td>8</td>
-      <td>0.38</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>20 to 25</td>
-      <td>2021</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0.00</td>
-      <td>5</td>
-      <td>5.00</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>20 to 25</td>
-      <td>2018</td>
-      <td>1</td>
-      <td>128</td>
-      <td>0.35</td>
-      <td>6</td>
-      <td>6.00</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>20 to 25</td>
-      <td>2009</td>
-      <td>1</td>
-      <td>93</td>
-      <td>0.25</td>
-      <td>6</td>
-      <td>6.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>15 to 20</td>
-      <td>all</td>
-      <td>4</td>
-      <td>255</td>
-      <td>0.70</td>
-      <td>12</td>
-      <td>0.57</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>15 to 20</td>
-      <td>2015</td>
-      <td>1</td>
-      <td>256</td>
-      <td>0.70</td>
-      <td>8</td>
-      <td>8.00</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>15 to 20</td>
-      <td>2011</td>
-      <td>1</td>
-      <td>251</td>
-      <td>0.69</td>
-      <td>9</td>
-      <td>9.00</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>15 to 20</td>
-      <td>2010</td>
-      <td>1</td>
-      <td>193</td>
-      <td>0.53</td>
-      <td>9</td>
-      <td>9.00</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>15 to 20</td>
-      <td>2004</td>
-      <td>1</td>
-      <td>323</td>
-      <td>0.88</td>
+      <td>SPY</td>
       <td>10</td>
-      <td>10.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>12 to 15</td>
-      <td>all</td>
-      <td>4</td>
-      <td>162</td>
-      <td>0.44</td>
-      <td>16</td>
-      <td>0.76</td>
+      <td>30</td>
+      <td>0</td>
+      <td>5</td>
+      <td>6</td>
+      <td>5</td>
+      <td>425</td>
+      <td>456</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>12 to 15</td>
-      <td>2012</td>
-      <td>1</td>
-      <td>164</td>
-      <td>0.45</td>
-      <td>12</td>
-      <td>12.00</td>
+      <td>QQQ</td>
+      <td>10</td>
+      <td>15</td>
+      <td>0</td>
+      <td>5</td>
+      <td>9</td>
+      <td>8</td>
+      <td>331</td>
+      <td>352</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>12 to 15</td>
-      <td>2006</td>
-      <td>1</td>
-      <td>190</td>
-      <td>0.52</td>
-      <td>13</td>
-      <td>13.00</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>12 to 15</td>
-      <td>2004</td>
-      <td>1</td>
-      <td>196</td>
-      <td>0.54</td>
-      <td>13</td>
-      <td>13.00</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>12 to 15</td>
-      <td>2003</td>
-      <td>1</td>
-      <td>99</td>
-      <td>0.27</td>
-      <td>14</td>
-      <td>14.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>9 to 12</td>
-      <td>all</td>
+      <td>DIA</td>
+      <td>10</td>
+      <td>30</td>
+      <td>0</td>
+      <td>5</td>
       <td>7</td>
-      <td>76</td>
-      <td>0.21</td>
-      <td>23</td>
-      <td>1.1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>9 to 12</td>
-      <td>2021</td>
-      <td>1</td>
-      <td>73</td>
-      <td>0.20</td>
-      <td>16</td>
-      <td>16.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>9 to 12</td>
-      <td>2020</td>
-      <td>1</td>
-      <td>84</td>
-      <td>0.23</td>
-      <td>17</td>
-      <td>17.0</td>
+      <td>6</td>
+      <td>333</td>
+      <td>357</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>9 to 12</td>
-      <td>2019</td>
-      <td>1</td>
-      <td>61</td>
-      <td>0.17</td>
-      <td>17</td>
-      <td>17.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>9 to 12</td>
-      <td>2018</td>
-      <td>2</td>
-      <td>63</td>
-      <td>0.17</td>
-      <td>18</td>
-      <td>18.0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>9 to 12</td>
-      <td>2012</td>
-      <td>1</td>
-      <td>118</td>
-      <td>0.32</td>
-      <td>19</td>
-      <td>19.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>9 to 12</td>
-      <td>2007</td>
-      <td>1</td>
-      <td>74</td>
-      <td>0.20</td>
-      <td>19</td>
-      <td>19.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>6 to 9</td>
-      <td>all</td>
-      <td>16</td>
-      <td>50</td>
-      <td>0.14</td>
-      <td>39</td>
-      <td>1.86</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>6 to 9</td>
-      <td>2021</td>
-      <td>2</td>
-      <td>50</td>
-      <td>0.14</td>
-      <td>24</td>
-      <td>24.00</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>6 to 9</td>
-      <td>2019</td>
-      <td>1</td>
-      <td>98</td>
-      <td>0.27</td>
-      <td>24</td>
-      <td>24.00</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>6 to 9</td>
-      <td>2016</td>
-      <td>1</td>
-      <td>33</td>
-      <td>0.09</td>
-      <td>25</td>
-      <td>25.00</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>6 to 9</td>
-      <td>2014</td>
-      <td>2</td>
-      <td>82</td>
-      <td>0.22</td>
-      <td>26</td>
-      <td>26.00</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>6 to 9</td>
-      <td>2011</td>
-      <td>1</td>
-      <td>67</td>
-      <td>0.18</td>
-      <td>26</td>
-      <td>26.00</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>6 to 9</td>
-      <td>2010</td>
-      <td>1</td>
-      <td>45</td>
-      <td>0.12</td>
-      <td>27</td>
-      <td>27.00</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>6 to 9</td>
-      <td>2009</td>
-      <td>2</td>
-      <td>31</td>
-      <td>0.08</td>
-      <td>28</td>
-      <td>28.00</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>6 to 9</td>
-      <td>2007</td>
-      <td>1</td>
-      <td>57</td>
-      <td>0.16</td>
-      <td>28</td>
-      <td>28.00</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>6 to 9</td>
-      <td>2005</td>
-      <td>1</td>
-      <td>107</td>
-      <td>0.29</td>
-      <td>29</td>
-      <td>29.00</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>6 to 9</td>
-      <td>2003</td>
-      <td>2</td>
-      <td>28</td>
-      <td>0.08</td>
-      <td>30</td>
-      <td>30.00</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>6 to 9</td>
-      <td>2001</td>
-      <td>1</td>
-      <td>8</td>
-      <td>0.02</td>
-      <td>30</td>
-      <td>30.00</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>6 to 9</td>
-      <td>2000</td>
-      <td>1</td>
-      <td>14</td>
-      <td>0.04</td>
-      <td>31</td>
-      <td>31.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>3 to 6</td>
-      <td>all</td>
-      <td>40</td>
-      <td>24</td>
-      <td>0.07</td>
-      <td>79</td>
-      <td>3.76</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>3 to 6</td>
-      <td>2021</td>
-      <td>2</td>
+      <td>AAPL</td>
       <td>10</td>
-      <td>0.03</td>
-      <td>40</td>
-      <td>40.00</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3 to 6</td>
-      <td>2020</td>
-      <td>3</td>
+      <td>30</td>
+      <td>0</td>
+      <td>10</td>
+      <td>12</td>
       <td>11</td>
-      <td>0.03</td>
-      <td>41</td>
-      <td>41.00</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>3 to 6</td>
-      <td>2018</td>
-      <td>2</td>
-      <td>26</td>
-      <td>0.07</td>
-      <td>42</td>
-      <td>42.00</td>
+      <td>159</td>
+      <td>180</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>3 to 6</td>
-      <td>2017</td>
-      <td>2</td>
-      <td>38</td>
-      <td>0.10</td>
-      <td>43</td>
-      <td>43.00</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>3 to 6</td>
-      <td>2016</td>
-      <td>2</td>
-      <td>52</td>
-      <td>0.14</td>
-      <td>44</td>
-      <td>44.00</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>3 to 6</td>
-      <td>2015</td>
+      <td>AMZN</td>
+      <td>15</td>
+      <td>15</td>
+      <td>0</td>
       <td>5</td>
-      <td>24</td>
-      <td>0.07</td>
-      <td>47</td>
-      <td>47.00</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>3 to 6</td>
-      <td>2014</td>
-      <td>4</td>
-      <td>26</td>
-      <td>0.07</td>
-      <td>49</td>
-      <td>49.00</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>3 to 6</td>
-      <td>2013</td>
-      <td>5</td>
-      <td>26</td>
-      <td>0.07</td>
-      <td>51</td>
-      <td>51.00</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>3 to 6</td>
-      <td>2010</td>
-      <td>1</td>
-      <td>25</td>
-      <td>0.07</td>
-      <td>52</td>
-      <td>52.00</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>3 to 6</td>
-      <td>2009</td>
-      <td>5</td>
-      <td>16</td>
-      <td>0.04</td>
-      <td>54</td>
-      <td>54.00</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>3 to 6</td>
-      <td>2007</td>
-      <td>1</td>
-      <td>19</td>
-      <td>0.05</td>
-      <td>55</td>
-      <td>55.00</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>3 to 6</td>
-      <td>2006</td>
-      <td>1</td>
-      <td>77</td>
-      <td>0.21</td>
-      <td>55</td>
-      <td>55.00</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>3 to 6</td>
-      <td>2003</td>
-      <td>6</td>
-      <td>17</td>
-      <td>0.05</td>
-      <td>58</td>
-      <td>58.00</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>3 to 6</td>
-      <td>2000</td>
-      <td>1</td>
-      <td>6</td>
-      <td>0.02</td>
-      <td>59</td>
-      <td>59.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>drop_%</th>
-      <th>year</th>
-      <th>count_section</th>
-      <th>avg_recovery_days</th>
-      <th>avg_recovery_years</th>
-      <th>count_all</th>
-      <th>avg_count_per_year_all</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0 to 3</td>
-      <td>all</td>
-      <td>266</td>
-      <td>6</td>
-      <td>0.02</td>
-      <td>345</td>
-      <td>16.43</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0 to 3</td>
-      <td>2021</td>
-      <td>12</td>
-      <td>6</td>
-      <td>0.02</td>
-      <td>85</td>
-      <td>85.00</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0 to 3</td>
-      <td>2020</td>
-      <td>17</td>
-      <td>5</td>
-      <td>0.01</td>
-      <td>93</td>
-      <td>93.00</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0 to 3</td>
-      <td>2019</td>
-      <td>28</td>
-      <td>5</td>
-      <td>0.01</td>
-      <td>107</td>
-      <td>107.00</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0 to 3</td>
-      <td>2018</td>
-      <td>9</td>
-      <td>4</td>
-      <td>0.01</td>
-      <td>112</td>
-      <td>112.00</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0 to 3</td>
-      <td>2017</td>
-      <td>34</td>
-      <td>6</td>
-      <td>0.02</td>
-      <td>129</td>
-      <td>129.00</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>0 to 3</td>
-      <td>2016</td>
+      <td>21</td>
       <td>20</td>
-      <td>6</td>
-      <td>0.02</td>
-      <td>139</td>
-      <td>139.00</td>
+      <td>2932</td>
+      <td>3078</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>MSFT</td>
+      <td>15</td>
+      <td>10</td>
+      <td>0</td>
+      <td>5</td>
+      <td>12</td>
+      <td>11</td>
+      <td>287</td>
+      <td>299</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>BTC-USD</td>
+      <td>10</td>
+      <td>10</td>
+      <td>0</td>
+      <td>15</td>
+      <td>8</td>
+      <td>7</td>
+      <td>39411</td>
+      <td>45323</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>0 to 3</td>
-      <td>2015</td>
-      <td>5</td>
-      <td>9</td>
-      <td>0.03</td>
-      <td>141</td>
-      <td>141.00</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>0 to 3</td>
-      <td>2014</td>
+      <td>ETH-USD</td>
+      <td>10</td>
       <td>15</td>
-      <td>3</td>
-      <td>0.01</td>
-      <td>149</td>
-      <td>149.00</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>0 to 3</td>
-      <td>2013</td>
-      <td>29</td>
-      <td>5</td>
-      <td>0.02</td>
-      <td>163</td>
-      <td>163.00</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>0 to 3</td>
-      <td>2012</td>
-      <td>12</td>
-      <td>5</td>
-      <td>0.02</td>
-      <td>169</td>
-      <td>169.00</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>0 to 3</td>
-      <td>2011</td>
-      <td>5</td>
-      <td>5</td>
-      <td>0.02</td>
-      <td>172</td>
-      <td>172.00</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>0 to 3</td>
-      <td>2010</td>
-      <td>9</td>
-      <td>7</td>
-      <td>0.02</td>
-      <td>176</td>
-      <td>176.00</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>0 to 3</td>
-      <td>2009</td>
-      <td>16</td>
-      <td>5</td>
-      <td>0.01</td>
-      <td>184</td>
-      <td>184.00</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>0 to 3</td>
-      <td>2007</td>
+      <td>0</td>
       <td>15</td>
-      <td>8</td>
-      <td>0.02</td>
-      <td>192</td>
-      <td>192.00</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>0 to 3</td>
-      <td>2006</td>
-      <td>6</td>
-      <td>13</td>
-      <td>0.04</td>
-      <td>195</td>
-      <td>195.00</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>0 to 3</td>
-      <td>2005</td>
-      <td>5</td>
-      <td>11</td>
-      <td>0.03</td>
-      <td>197</td>
-      <td>197.00</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>0 to 3</td>
-      <td>2004</td>
-      <td>5</td>
-      <td>5</td>
-      <td>0.02</td>
-      <td>200</td>
-      <td>200.00</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>0 to 3</td>
-      <td>2003</td>
-      <td>17</td>
-      <td>4</td>
-      <td>0.01</td>
-      <td>208</td>
-      <td>208.00</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>0 to 3</td>
-      <td>2001</td>
-      <td>2</td>
-      <td>5</td>
-      <td>0.01</td>
-      <td>209</td>
-      <td>209.00</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>0 to 3</td>
-      <td>2000</td>
-      <td>5</td>
-      <td>4</td>
-      <td>0.01</td>
-      <td>212</td>
-      <td>212.00</td>
+      <td>25</td>
+      <td>24</td>
+      <td>2621</td>
+      <td>3049</td>
     </tr>
   </tbody>
 </table>
@@ -14802,10 +13556,317 @@ Current Drop % -19.36 %
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[NbConvertApp] Converting notebook avg_dips_ATH_intrayear_3.ipynb to html
-[NbConvertApp] Writing 302406 bytes to ../../GitHub/tommybetz.github.io/average_ath_dips/average_ath_dips_NASDAQComposite.html
+<pre><span class="ansi-bold">## Best RSI Parameters identified by the custom Algorithm
+</span></pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>stock</th>
+      <th>RSI</th>
+      <th>Status</th>
+      <th>Buy RSI</th>
+      <th>Sell RSI</th>
+      <th>200d Avg RSI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>SPY</td>
+      <td>39</td>
+      <td>neutral</td>
+      <td>50</td>
+      <td>70</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>QQQ</td>
+      <td>37</td>
+      <td>neutral</td>
+      <td>55</td>
+      <td>70</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>DIA</td>
+      <td>39</td>
+      <td>neutral</td>
+      <td>65</td>
+      <td>70</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AAPL</td>
+      <td>36</td>
+      <td>neutral</td>
+      <td>75</td>
+      <td>80</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AMZN</td>
+      <td>45</td>
+      <td>neutral</td>
+      <td>40</td>
+      <td>60</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>MSFT</td>
+      <td>40</td>
+      <td>neutral</td>
+      <td>65</td>
+      <td>70</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>BTC-USD</td>
+      <td>45</td>
+      <td>neutral</td>
+      <td>75</td>
+      <td>80</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ETH-USD</td>
+      <td>43</td>
+      <td>neutral</td>
+      <td>75</td>
+      <td>80</td>
+      <td>49</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">## Implied Volatility Information
+</span>### IV: The ATM average implied volatility of the nearest monthly contract.
+### IV Rank: The ATM average implied volatility relative to the highest and lowest values of the past 1-year. If IV Rank is 100%, this means that the IV is at its highest level over the past 1-year
+### IV Percentile: The percentage of days with IV closing below the current ATM IV over the past 1-year
+### 1 Year IV High: The underlying asset&#39;s 1-year IV high
 </pre>
 </div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Sock</th>
+      <th>IV</th>
+      <th>IV Rank</th>
+      <th>IV Percentile</th>
+      <th>1 Year IV High</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>SPY</td>
+      <td>26.47%</td>
+      <td>77.95%</td>
+      <td>97%</td>
+      <td>31.04%</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>QQQ</td>
+      <td>32.21%</td>
+      <td>74.09%</td>
+      <td>95%</td>
+      <td>38.73%</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>DIA</td>
+      <td>24.39%</td>
+      <td>75.91%</td>
+      <td>97%</td>
+      <td>28.60%</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AAPL</td>
+      <td>35.46%</td>
+      <td>77.26%</td>
+      <td>96%</td>
+      <td>40.37%</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AMZN</td>
+      <td>38.18%</td>
+      <td>56.67%</td>
+      <td>96%</td>
+      <td>53.44%</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>MSFT</td>
+      <td>35.68%</td>
+      <td>63.37%</td>
+      <td>97%</td>
+      <td>47.14%</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ETH-USD</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-bold">## Analyst Ratings
+</span>### Numbers based on the last 3 Months
+### ETFs and Cryptos do not have Analyst Ratings
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Sock</th>
+      <th>Price Difference</th>
+      <th>Avg Price Target</th>
+      <th>Avg Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AAPL</td>
+      <td>24</td>
+      <td>192</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AMZN</td>
+      <td>44</td>
+      <td>4208</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>MSFT</td>
+      <td>33</td>
+      <td>374</td>
+      <td>3.6</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
 </div>
 
 </div>
