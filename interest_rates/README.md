@@ -31,12 +31,15 @@
 - VIX
 - - VIX at Date
 - 52W_highdd
-- - the closing price on the day of the interest rate change compared the highest price in the prior 52 weeks
+- - The closing price on the day of the interest rate change compared the highest price in the prior 52 weeks
 - 52W_low
-- - the closing price on the day of the interest rate change compared the lowest price in the prior 52 weeks
+- - The closing price on the day of the interest rate change compared the lowest price in the prior 52 weeks
 - - Stock price at the 
 - 1M_before
-- - the closing price on the day of the interest rate change compared to 1 month before
+- - The % change in closing price compared to 1 month before the interest rate change
+- - The closing price on the day of the interest rate change compared to 1 month before
+- 1M_after
+- - The % change in closing price 1 month after the interest date change
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
