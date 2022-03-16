@@ -13153,10 +13153,29 @@ div#notebook {
 
 <div class="output_area">
 
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;SPY&#39;, &#39;QQQ&#39;, &#39;DIA&#39;, &#39;AAPL&#39;, &#39;AMZN&#39;, &#39;MSFT&#39;, &#39;BTC-USD&#39;, &#39;ETH-USD&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre><span class="ansi-bold">## Buy/Sell Recommendations
 </span>### The custom algorithm finds the best parameters for EMA and RSI.
-### For RSI 30_70, the algorithm buys when RSI is 30, and sells when RSI is 70.
+### For RSI 30/70, the algorithm buys when RSI is 30, and sells when RSI is 70.
 </pre>
 </div>
 </div>
@@ -13184,94 +13203,67 @@ div#notebook {
     <tr style="text-align: right;">
       <th></th>
       <th>stock</th>
-      <th>buy_recom_ema</th>
-      <th>sell_recom_ema</th>
-      <th>buy_recom_rsi</th>
-      <th>sell_recom_rsi</th>
-      <th>buy_recom_rsi_30_70</th>
-      <th>sell_recom_rsi_30_70</th>
+      <th>EMA</th>
+      <th>RSI</th>
+      <th>RSI 30/70</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
       <td>SPY</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>1</th>
       <td>QQQ</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>2</th>
       <td>DIA</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>3</th>
       <td>AAPL</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>4</th>
       <td>AMZN</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
+      <td>BUY</td>
+      <td>neutral</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>5</th>
       <td>MSFT</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>6</th>
       <td>BTC-USD</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
     <tr>
       <th>7</th>
       <td>ETH-USD</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
+      <td>BUY</td>
+      <td>BUY</td>
+      <td>neutral</td>
     </tr>
   </tbody>
 </table>
@@ -13292,8 +13284,8 @@ div#notebook {
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">## % Annual Rate of Return (ARR) from each Strategy (within last 2 years)
-</span>### EMA, RSI, RSI_30_70 performance is based on trading recommendations from the custom algorithm
+<pre><span class="ansi-bold">## Annual Rate of Return (ARR) from each Strategy (within last 2 years)
+</span>### EMA, RSI, RSI 30/70 performance is based on trading recommendations from the custom algorithm
 ### Buy and Hold: Bought the equity 2 years ago and hold until now
 ### DCA (Dollar Cost Average): Bought an equal $ amount every day for the last 2 years and hold until now
 </pre>
@@ -13323,85 +13315,85 @@ div#notebook {
     <tr style="text-align: right;">
       <th></th>
       <th>stock</th>
-      <th>ema_prctg_arr</th>
-      <th>rsi_optimal_prctg_arr</th>
-      <th>rsi_30_70_prctg_arr</th>
-      <th>buy_and_hold_prctg_arr</th>
-      <th>dca_prctg_arr</th>
+      <th>EMA</th>
+      <th>RSI</th>
+      <th>RSI 30/70</th>
+      <th>Buy &amp; Hold</th>
+      <th>DCA</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
       <td>SPY</td>
-      <td>24.0</td>
-      <td>32.0</td>
-      <td>17.0</td>
-      <td>25.0</td>
-      <td>6.0</td>
+      <td>24%</td>
+      <td>32%</td>
+      <td>17%</td>
+      <td>25%</td>
+      <td>6%</td>
     </tr>
     <tr>
       <th>1</th>
       <td>QQQ</td>
-      <td>36.0</td>
-      <td>33.0</td>
-      <td>1.0</td>
-      <td>30.0</td>
-      <td>4.0</td>
+      <td>36%</td>
+      <td>33%</td>
+      <td>1%</td>
+      <td>30%</td>
+      <td>4%</td>
     </tr>
     <tr>
       <th>2</th>
       <td>DIA</td>
-      <td>19.0</td>
-      <td>26.0</td>
-      <td>19.0</td>
-      <td>19.0</td>
-      <td>4.0</td>
+      <td>19%</td>
+      <td>26%</td>
+      <td>19%</td>
+      <td>19%</td>
+      <td>4%</td>
     </tr>
     <tr>
       <th>3</th>
       <td>AAPL</td>
-      <td>61.0</td>
-      <td>55.0</td>
-      <td>6.0</td>
-      <td>49.0</td>
-      <td>14.0</td>
+      <td>61%</td>
+      <td>55%</td>
+      <td>6%</td>
+      <td>49%</td>
+      <td>14%</td>
     </tr>
     <tr>
       <th>4</th>
       <td>AMZN</td>
-      <td>50.0</td>
-      <td>31.0</td>
-      <td>-5.0</td>
-      <td>28.0</td>
-      <td>-2.0</td>
+      <td>50%</td>
+      <td>31%</td>
+      <td>-5%</td>
+      <td>28%</td>
+      <td>-2%</td>
     </tr>
     <tr>
       <th>5</th>
       <td>MSFT</td>
-      <td>48.0</td>
-      <td>43.0</td>
-      <td>-1.0</td>
-      <td>33.0</td>
-      <td>9.0</td>
+      <td>48%</td>
+      <td>43%</td>
+      <td>-1%</td>
+      <td>33%</td>
+      <td>9%</td>
     </tr>
     <tr>
       <th>6</th>
       <td>BTC-USD</td>
-      <td>97.0</td>
-      <td>154.0</td>
-      <td>3.0</td>
-      <td>162.0</td>
-      <td>42.0</td>
+      <td>97%</td>
+      <td>154%</td>
+      <td>3%</td>
+      <td>162%</td>
+      <td>42%</td>
     </tr>
     <tr>
       <th>7</th>
       <td>ETH-USD</td>
-      <td>312.0</td>
-      <td>308.0</td>
-      <td>14.0</td>
-      <td>338.0</td>
-      <td>111.0</td>
+      <td>312%</td>
+      <td>308%</td>
+      <td>14%</td>
+      <td>338%</td>
+      <td>111%</td>
     </tr>
   </tbody>
 </table>
@@ -13423,7 +13415,14 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre><span class="ansi-bold">## Best EMA Parameters identified by custom Algorithm
-</span></pre>
+</span><span class="ansi-bold">### Parameters
+</span><span class="ansi-bold">#### Example with SPY
+</span>##### Buy when the stock price is 0 % below the 10 day EMA
+##### Sell when the stock price is 5 % above the 30 day EMA
+##### In the last 2 years there were 6 Buy and 5 Sell trades
+##### Current Buy Target Price: 425
+##### Current Sell Target Price: 456
+</pre>
 </div>
 </div>
 
@@ -13450,12 +13449,12 @@ div#notebook {
     <tr style="text-align: right;">
       <th></th>
       <th>stock</th>
-      <th>float_buy_days_ema</th>
-      <th>float_sell_days_ema</th>
-      <th>float_buy_prctg_ema</th>
-      <th>float_sell_prctg_ema</th>
-      <th>int_buy_num_ema</th>
-      <th>int_sell_num_ema</th>
+      <th>buy_days</th>
+      <th>sell_days</th>
+      <th>buy_prctg</th>
+      <th>sell_prctg</th>
+      <th>buy_frequency</th>
+      <th>sell_frequency</th>
       <th>buy_target_price</th>
       <th>sell_target_price</th>
     </tr>
@@ -13464,98 +13463,98 @@ div#notebook {
     <tr>
       <th>0</th>
       <td>SPY</td>
-      <td>10.0</td>
-      <td>30.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
+      <td>10</td>
+      <td>30</td>
+      <td>0</td>
+      <td>5</td>
       <td>6</td>
       <td>5</td>
-      <td>425.56</td>
-      <td>456.81</td>
+      <td>425</td>
+      <td>456</td>
     </tr>
     <tr>
       <th>1</th>
       <td>QQQ</td>
-      <td>10.0</td>
-      <td>15.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
+      <td>10</td>
+      <td>15</td>
+      <td>0</td>
+      <td>5</td>
       <td>9</td>
       <td>8</td>
-      <td>331.88</td>
-      <td>352.02</td>
+      <td>331</td>
+      <td>352</td>
     </tr>
     <tr>
       <th>2</th>
       <td>DIA</td>
-      <td>10.0</td>
-      <td>30.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
+      <td>10</td>
+      <td>30</td>
+      <td>0</td>
+      <td>5</td>
       <td>7</td>
       <td>6</td>
-      <td>333.40</td>
-      <td>357.41</td>
+      <td>333</td>
+      <td>357</td>
     </tr>
     <tr>
       <th>3</th>
       <td>AAPL</td>
-      <td>10.0</td>
-      <td>30.0</td>
-      <td>0.0</td>
-      <td>10.0</td>
+      <td>10</td>
+      <td>30</td>
+      <td>0</td>
+      <td>10</td>
       <td>12</td>
       <td>11</td>
-      <td>159.73</td>
-      <td>180.81</td>
+      <td>159</td>
+      <td>180</td>
     </tr>
     <tr>
       <th>4</th>
       <td>AMZN</td>
-      <td>15.0</td>
-      <td>15.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
+      <td>15</td>
+      <td>15</td>
+      <td>0</td>
+      <td>5</td>
       <td>21</td>
       <td>20</td>
-      <td>2932.35</td>
-      <td>3078.97</td>
+      <td>2932</td>
+      <td>3078</td>
     </tr>
     <tr>
       <th>5</th>
       <td>MSFT</td>
-      <td>15.0</td>
-      <td>10.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
+      <td>15</td>
+      <td>10</td>
+      <td>0</td>
+      <td>5</td>
       <td>12</td>
       <td>11</td>
-      <td>287.91</td>
-      <td>299.83</td>
+      <td>287</td>
+      <td>299</td>
     </tr>
     <tr>
       <th>6</th>
       <td>BTC-USD</td>
-      <td>10.0</td>
-      <td>10.0</td>
-      <td>0.0</td>
-      <td>15.0</td>
+      <td>10</td>
+      <td>10</td>
+      <td>0</td>
+      <td>15</td>
       <td>8</td>
       <td>7</td>
-      <td>39411.57</td>
-      <td>45323.31</td>
+      <td>39411</td>
+      <td>45323</td>
     </tr>
     <tr>
       <th>7</th>
       <td>ETH-USD</td>
-      <td>10.0</td>
-      <td>15.0</td>
-      <td>0.0</td>
-      <td>15.0</td>
+      <td>10</td>
+      <td>15</td>
+      <td>0</td>
+      <td>15</td>
       <td>25</td>
       <td>24</td>
-      <td>2621.42</td>
-      <td>3049.41</td>
+      <td>2621</td>
+      <td>3049</td>
     </tr>
   </tbody>
 </table>
@@ -13576,7 +13575,7 @@ div#notebook {
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-bold">## Best RSI Parameters identified by custom Algorithm
+<pre><span class="ansi-bold">## Best RSI Parameters identified by the custom Algorithm
 </span></pre>
 </div>
 </div>
@@ -13604,85 +13603,85 @@ div#notebook {
     <tr style="text-align: right;">
       <th></th>
       <th>stock</th>
-      <th>rsi</th>
-      <th>rsi_status</th>
-      <th>buy_value_rsi</th>
-      <th>sell_value_rsi</th>
-      <th>rsi_avg_200d</th>
+      <th>RSI</th>
+      <th>Status</th>
+      <th>Buy RSI</th>
+      <th>Sell RSI</th>
+      <th>200d Avg RSI</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
       <td>SPY</td>
-      <td>39.73</td>
+      <td>39</td>
       <td>neutral</td>
-      <td>50.0</td>
-      <td>70.0</td>
-      <td>54.21</td>
+      <td>50</td>
+      <td>70</td>
+      <td>54</td>
     </tr>
     <tr>
       <th>1</th>
       <td>QQQ</td>
-      <td>37.78</td>
+      <td>37</td>
       <td>neutral</td>
-      <td>55.0</td>
-      <td>70.0</td>
-      <td>54.66</td>
+      <td>55</td>
+      <td>70</td>
+      <td>54</td>
     </tr>
     <tr>
       <th>2</th>
       <td>DIA</td>
-      <td>39.40</td>
+      <td>39</td>
       <td>neutral</td>
-      <td>65.0</td>
-      <td>70.0</td>
-      <td>50.85</td>
+      <td>65</td>
+      <td>70</td>
+      <td>50</td>
     </tr>
     <tr>
       <th>3</th>
       <td>AAPL</td>
-      <td>36.24</td>
+      <td>36</td>
       <td>neutral</td>
-      <td>75.0</td>
-      <td>80.0</td>
-      <td>56.01</td>
+      <td>75</td>
+      <td>80</td>
+      <td>56</td>
     </tr>
     <tr>
       <th>4</th>
       <td>AMZN</td>
-      <td>45.79</td>
+      <td>45</td>
       <td>neutral</td>
-      <td>40.0</td>
-      <td>60.0</td>
-      <td>49.11</td>
+      <td>40</td>
+      <td>60</td>
+      <td>49</td>
     </tr>
     <tr>
       <th>5</th>
       <td>MSFT</td>
-      <td>40.56</td>
+      <td>40</td>
       <td>neutral</td>
-      <td>65.0</td>
-      <td>70.0</td>
-      <td>56.76</td>
+      <td>65</td>
+      <td>70</td>
+      <td>56</td>
     </tr>
     <tr>
       <th>6</th>
       <td>BTC-USD</td>
-      <td>45.36</td>
+      <td>45</td>
       <td>neutral</td>
-      <td>75.0</td>
-      <td>80.0</td>
-      <td>48.38</td>
+      <td>75</td>
+      <td>80</td>
+      <td>48</td>
     </tr>
     <tr>
       <th>7</th>
       <td>ETH-USD</td>
-      <td>43.77</td>
+      <td>43</td>
       <td>neutral</td>
-      <td>75.0</td>
-      <td>80.0</td>
-      <td>49.49</td>
+      <td>75</td>
+      <td>80</td>
+      <td>49</td>
     </tr>
   </tbody>
 </table>
@@ -13704,7 +13703,11 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre><span class="ansi-bold">## Implied Volatility Information
-</span></pre>
+</span>### IV: The ATM average implied volatility of the nearest monthly contract.
+### IV Rank: The ATM average implied volatility relative to the highest and lowest values of the past 1-year. If IV Rank is 100%, this means that the IV is at its highest level over the past 1-year
+### IV Percentile: The percentage of days with IV closing below the current ATM IV over the past 1-year
+### 1 Year IV High: The underlying asset&#39;s 1-year IV high
+</pre>
 </div>
 </div>
 
@@ -13730,11 +13733,11 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>stock</th>
-      <th>iv</th>
-      <th>iv_rank</th>
-      <th>iv_%</th>
-      <th>iv_1yr_high</th>
+      <th>Sock</th>
+      <th>IV</th>
+      <th>IV Rank</th>
+      <th>IV Percentile</th>
+      <th>1 Year IV High</th>
     </tr>
   </thead>
   <tbody>
@@ -13850,68 +13853,33 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>stock</th>
-      <th>price_diff_to_analyst_target_%</th>
-      <th>price_target_mean</th>
-      <th>rating_mean</th>
+      <th>Sock</th>
+      <th>Price Difference</th>
+      <th>Avg Price Target</th>
+      <th>Avg Rating</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>SPY</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>AAPL</td>
+      <td>24</td>
+      <td>192</td>
+      <td>3.2</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>QQQ</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>AMZN</td>
+      <td>44</td>
+      <td>4208</td>
+      <td>3.6</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>DIA</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>AAPL</td>
-      <td>24.71</td>
-      <td>192.96</td>
-      <td>3.16</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>AMZN</td>
-      <td>44.58</td>
-      <td>4208.06</td>
-      <td>3.59</td>
-    </tr>
-    <tr>
-      <th>5</th>
       <td>MSFT</td>
-      <td>33.82</td>
-      <td>374.79</td>
-      <td>3.57</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>BTC-USD</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>ETH-USD</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>33</td>
+      <td>374</td>
+      <td>3.6</td>
     </tr>
   </tbody>
 </table>
@@ -13922,9 +13890,6 @@ div#notebook {
 
 </div>
 </div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
 
 </div>
     </div>
