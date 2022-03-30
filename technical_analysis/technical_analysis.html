@@ -13144,7 +13144,7 @@ div#notebook {
 </span>## Timeframe for Calculations: last 2 years
 ## I programmed an adaptable algorithm with various dynamic parameters for EMA and RSI to support trading decisions
 ### The parameters (e.g. 50 day EMA, 70 RSI, etc) are different for each stock since the algorithm picks the best performing parameters for each stock
-## Last updated: 2022-03-25 
+## Last updated: 2022-03-29 
 
 </pre>
 </div>
@@ -13208,7 +13208,7 @@ div#notebook {
     <tr>
       <th>1</th>
       <td>QQQ</td>
-      <td>HOLD</td>
+      <td>SELL</td>
       <td>HOLD</td>
       <td>HOLD</td>
     </tr>
@@ -13228,31 +13228,38 @@ div#notebook {
     </tr>
     <tr>
       <th>4</th>
-      <td>AMZN</td>
-      <td>HOLD</td>
-      <td>BUY</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <th>5</th>
       <td>MSFT</td>
       <td>HOLD</td>
       <td>BUY</td>
       <td>HOLD</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>BTC-USD</td>
+      <th>5</th>
+      <td>SMH</td>
       <td>HOLD</td>
       <td>BUY</td>
       <td>HOLD</td>
     </tr>
     <tr>
+      <th>6</th>
+      <td>XLF</td>
+      <td>HOLD</td>
+      <td>HOLD</td>
+      <td>HOLD</td>
+    </tr>
+    <tr>
       <th>7</th>
+      <td>BTC-USD</td>
+      <td>HOLD</td>
+      <td>BUY</td>
+      <td>SELL</td>
+    </tr>
+    <tr>
+      <th>8</th>
       <td>ETH-USD</td>
       <td>HOLD</td>
       <td>BUY</td>
-      <td>HOLD</td>
+      <td>SELL</td>
     </tr>
   </tbody>
 </table>
@@ -13318,73 +13325,82 @@ div#notebook {
       <th>0</th>
       <td>SPY</td>
       <td>37%</td>
-      <td>39%</td>
+      <td>40%</td>
       <td>2%</td>
       <td>32%</td>
-      <td>9%</td>
+      <td>10%</td>
     </tr>
     <tr>
       <th>1</th>
       <td>QQQ</td>
-      <td>50%</td>
-      <td>40%</td>
-      <td>6%</td>
-      <td>37%</td>
-      <td>8%</td>
+      <td>51%</td>
+      <td>42%</td>
+      <td>7%</td>
+      <td>38%</td>
+      <td>9%</td>
     </tr>
     <tr>
       <th>2</th>
       <td>DIA</td>
-      <td>30%</td>
-      <td>32%</td>
+      <td>31%</td>
+      <td>33%</td>
       <td>6%</td>
-      <td>24%</td>
-      <td>6%</td>
+      <td>25%</td>
+      <td>7%</td>
     </tr>
     <tr>
       <th>3</th>
       <td>AAPL</td>
-      <td>80%</td>
-      <td>71%</td>
+      <td>82%</td>
+      <td>73%</td>
       <td>6%</td>
-      <td>64%</td>
-      <td>20%</td>
+      <td>67%</td>
+      <td>21%</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>AMZN</td>
+      <td>MSFT</td>
+      <td>60%</td>
       <td>50%</td>
-      <td>32%</td>
-      <td>1%</td>
-      <td>30%</td>
-      <td>3%</td>
+      <td>4%</td>
+      <td>40%</td>
+      <td>14%</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>MSFT</td>
-      <td>58%</td>
-      <td>50%</td>
-      <td>3%</td>
-      <td>39%</td>
-      <td>12%</td>
+      <td>SMH</td>
+      <td>66%</td>
+      <td>59%</td>
+      <td>11%</td>
+      <td>53%</td>
+      <td>15%</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>BTC-USD</td>
-      <td>131%</td>
-      <td>149%</td>
-      <td>-12%</td>
-      <td>157%</td>
-      <td>49%</td>
+      <td>XLF</td>
+      <td>45%</td>
+      <td>41%</td>
+      <td>6%</td>
+      <td>36%</td>
+      <td>13%</td>
     </tr>
     <tr>
       <th>7</th>
+      <td>BTC-USD</td>
+      <td>141%</td>
+      <td>174%</td>
+      <td>-9%</td>
+      <td>183%</td>
+      <td>53%</td>
+    </tr>
+    <tr>
+      <th>8</th>
       <td>ETH-USD</td>
-      <td>430%</td>
-      <td>343%</td>
-      <td>-1%</td>
-      <td>375%</td>
-      <td>123%</td>
+      <td>460%</td>
+      <td>386%</td>
+      <td>2%</td>
+      <td>421%</td>
+      <td>131%</td>
     </tr>
   </tbody>
 </table>
@@ -13411,8 +13427,8 @@ div#notebook {
 </span>##### Buy when the stock price is 0 % below the 10 day EMA
 ##### Sell when the stock price is 5 % above the 30 day EMA
 ##### In the last 2 years there were 6 Buy and 5 Sell trades
-##### Current Buy Target Price: 444
-##### Current Sell Target Price: 462
+##### Current Buy Target Price: 447
+##### Current Sell Target Price: 463
 </pre>
 </div>
 </div>
@@ -13460,8 +13476,8 @@ div#notebook {
       <td>5</td>
       <td>6</td>
       <td>5</td>
-      <td>444</td>
-      <td>462</td>
+      <td>447</td>
+      <td>463</td>
     </tr>
     <tr>
       <th>1</th>
@@ -13471,9 +13487,9 @@ div#notebook {
       <td>0</td>
       <td>5</td>
       <td>11</td>
-      <td>10</td>
-      <td>348</td>
-      <td>364</td>
+      <td>11</td>
+      <td>351</td>
+      <td>367</td>
     </tr>
     <tr>
       <th>2</th>
@@ -13484,8 +13500,8 @@ div#notebook {
       <td>5</td>
       <td>7</td>
       <td>6</td>
-      <td>344</td>
-      <td>359</td>
+      <td>345</td>
+      <td>360</td>
     </tr>
     <tr>
       <th>3</th>
@@ -13496,23 +13512,11 @@ div#notebook {
       <td>10</td>
       <td>12</td>
       <td>11</td>
-      <td>168</td>
-      <td>182</td>
+      <td>170</td>
+      <td>183</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>AMZN</td>
-      <td>15</td>
-      <td>15</td>
-      <td>0</td>
-      <td>5</td>
-      <td>20</td>
-      <td>20</td>
-      <td>3153</td>
-      <td>3311</td>
-    </tr>
-    <tr>
-      <th>5</th>
       <td>MSFT</td>
       <td>15</td>
       <td>10</td>
@@ -13520,11 +13524,35 @@ div#notebook {
       <td>5</td>
       <td>11</td>
       <td>10</td>
+      <td>299</td>
+      <td>317</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>SMH</td>
+      <td>15</td>
+      <td>50</td>
+      <td>0</td>
+      <td>10</td>
+      <td>14</td>
+      <td>13</td>
+      <td>267</td>
       <td>297</td>
-      <td>314</td>
     </tr>
     <tr>
       <th>6</th>
+      <td>XLF</td>
+      <td>10</td>
+      <td>150</td>
+      <td>0</td>
+      <td>20</td>
+      <td>6</td>
+      <td>5</td>
+      <td>38</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <th>7</th>
       <td>BTC-USD</td>
       <td>20</td>
       <td>50</td>
@@ -13532,11 +13560,11 @@ div#notebook {
       <td>30</td>
       <td>7</td>
       <td>6</td>
-      <td>41738</td>
-      <td>53781</td>
+      <td>43154</td>
+      <td>54636</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>8</th>
       <td>ETH-USD</td>
       <td>10</td>
       <td>15</td>
@@ -13544,8 +13572,8 @@ div#notebook {
       <td>15</td>
       <td>25</td>
       <td>24</td>
-      <td>2981</td>
-      <td>3359</td>
+      <td>3152</td>
+      <td>3525</td>
     </tr>
   </tbody>
 </table>
@@ -13605,7 +13633,7 @@ div#notebook {
     <tr>
       <th>0</th>
       <td>SPY</td>
-      <td>60</td>
+      <td>63</td>
       <td>neutral</td>
       <td>50</td>
       <td>70</td>
@@ -13614,7 +13642,7 @@ div#notebook {
     <tr>
       <th>1</th>
       <td>QQQ</td>
-      <td>58</td>
+      <td>62</td>
       <td>neutral</td>
       <td>55</td>
       <td>70</td>
@@ -13623,7 +13651,7 @@ div#notebook {
     <tr>
       <th>2</th>
       <td>DIA</td>
-      <td>57</td>
+      <td>59</td>
       <td>neutral</td>
       <td>65</td>
       <td>70</td>
@@ -13632,7 +13660,7 @@ div#notebook {
     <tr>
       <th>3</th>
       <td>AAPL</td>
-      <td>63</td>
+      <td>65</td>
       <td>neutral</td>
       <td>75</td>
       <td>80</td>
@@ -13640,36 +13668,45 @@ div#notebook {
     </tr>
     <tr>
       <th>4</th>
-      <td>AMZN</td>
-      <td>63</td>
+      <td>MSFT</td>
+      <td>61</td>
       <td>neutral</td>
       <td>65</td>
       <td>70</td>
-      <td>49</td>
+      <td>56</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>MSFT</td>
-      <td>56</td>
+      <td>SMH</td>
+      <td>58</td>
       <td>neutral</td>
+      <td>60</td>
       <td>65</td>
-      <td>70</td>
-      <td>56</td>
+      <td>53</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>BTC-USD</td>
-      <td>62</td>
+      <td>XLF</td>
+      <td>56</td>
       <td>neutral</td>
+      <td>40</td>
+      <td>60</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>BTC-USD</td>
+      <td>70</td>
+      <td>overbought</td>
       <td>75</td>
       <td>80</td>
       <td>48</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>8</th>
       <td>ETH-USD</td>
-      <td>65</td>
-      <td>neutral</td>
+      <td>73</td>
+      <td>overbought</td>
       <td>75</td>
       <td>80</td>
       <td>49</td>
@@ -13735,53 +13772,61 @@ div#notebook {
     <tr>
       <th>0</th>
       <td>SPY</td>
-      <td>16.61%</td>
-      <td>30.39%</td>
-      <td>70%</td>
+      <td>15.33%</td>
+      <td>24.24%</td>
+      <td>61%</td>
       <td>31.04%</td>
     </tr>
     <tr>
       <th>1</th>
       <td>QQQ</td>
-      <td>23.32%</td>
-      <td>38.79%</td>
-      <td>75%</td>
+      <td>22.29%</td>
+      <td>34.71%</td>
+      <td>70%</td>
       <td>38.73%</td>
     </tr>
     <tr>
       <th>2</th>
       <td>DIA</td>
-      <td>14.95%</td>
-      <td>21.89%</td>
-      <td>55%</td>
+      <td>13.63%</td>
+      <td>14.38%</td>
+      <td>33%</td>
       <td>28.60%</td>
     </tr>
     <tr>
       <th>3</th>
       <td>AAPL</td>
-      <td>24.27%</td>
-      <td>25.37%</td>
-      <td>37%</td>
+      <td>26.23%</td>
+      <td>34.46%</td>
+      <td>49%</td>
       <td>40.37%</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>AMZN</td>
-      <td>30.07%</td>
-      <td>33.64%</td>
-      <td>67%</td>
-      <td>53.44%</td>
-    </tr>
-    <tr>
-      <th>5</th>
       <td>MSFT</td>
-      <td>25.89%</td>
-      <td>32.09%</td>
-      <td>71%</td>
+      <td>26.94%</td>
+      <td>35.43%</td>
+      <td>75%</td>
       <td>47.14%</td>
     </tr>
     <tr>
+      <th>5</th>
+      <td>SMH</td>
+      <td>29.45%</td>
+      <td>32.66%</td>
+      <td>70%</td>
+      <td>49.93%</td>
+    </tr>
+    <tr>
       <th>6</th>
+      <td>XLF</td>
+      <td>20.03%</td>
+      <td>13.75%</td>
+      <td>53%</td>
+      <td>45.74%</td>
+    </tr>
+    <tr>
+      <th>7</th>
       <td>BTC-USD</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -13789,7 +13834,7 @@ div#notebook {
       <td>NaN</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>8</th>
       <td>ETH-USD</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -13854,21 +13899,14 @@ div#notebook {
     <tr>
       <th>0</th>
       <td>AAPL</td>
-      <td>10%</td>
+      <td>8%</td>
       <td>192</td>
       <td>3.1</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>AMZN</td>
-      <td>27%</td>
-      <td>4188</td>
-      <td>3.5</td>
-    </tr>
-    <tr>
-      <th>2</th>
       <td>MSFT</td>
-      <td>22%</td>
+      <td>19%</td>
       <td>372</td>
       <td>3.5</td>
     </tr>
