@@ -1,0 +1,3 @@
+./run_script.sh
+git add -A && git commit -m "update all files"
+git push
