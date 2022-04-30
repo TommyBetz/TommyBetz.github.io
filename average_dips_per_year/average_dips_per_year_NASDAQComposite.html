@@ -13167,17 +13167,17 @@ div#notebook {
 <pre><span class="ansi-bold"># % Every Dip within a Year to its Lowest Price until Recovery
 </span>## Timeframe: 2000 to now
 ## Numbers are basded on Close Price
-## Last updated: 2022-03-25 
+## Last updated: 2022-04-29 
 
 <span class="ansi-bold">## NASDAQ Composite
 </span>### Current Drawdown Cycle
 Highest Closing: 16057.44
 Highest Date: 2021-11-19
-Lowest Closing: 12581.22
-Lowest Date: 2022-03-14
-Max Drop % from ATH: -21.65 %
-Current Drop % from ATH -11.76 %
-# Times per Year does the Current Drop % happen: 6.04 x (on average once every 0.2 years)
+Lowest Closing: 12334.64
+Lowest Date: 2022-04-29
+Max Drop % from ATH: -23.18 %
+Current Drop % from ATH -23.18 %
+# Times per Year does the Current Drop % happen: 0.3 x (on average once every 3.3 years)
 
 
 <span class="ansi-bold">### Summary
@@ -13229,18 +13229,18 @@ Current Drop % from ATH -11.76 %
       <td>947</td>
       <td>5</td>
       <td>0.02</td>
-      <td>1414</td>
-      <td>61.48</td>
+      <td>1421</td>
+      <td>61.78</td>
     </tr>
     <tr>
       <th>1</th>
       <td>3 to 6</td>
       <td>all</td>
-      <td>203</td>
+      <td>205</td>
       <td>17</td>
       <td>0.05</td>
-      <td>467</td>
-      <td>20.30</td>
+      <td>474</td>
+      <td>20.61</td>
     </tr>
     <tr>
       <th>2</th>
@@ -13249,38 +13249,38 @@ Current Drop % from ATH -11.76 %
       <td>91</td>
       <td>38</td>
       <td>0.11</td>
-      <td>264</td>
-      <td>11.48</td>
+      <td>269</td>
+      <td>11.70</td>
     </tr>
     <tr>
       <th>3</th>
       <td>9 to 12</td>
       <td>all</td>
-      <td>36</td>
+      <td>39</td>
       <td>80</td>
       <td>0.22</td>
-      <td>173</td>
-      <td>7.52</td>
+      <td>178</td>
+      <td>7.74</td>
     </tr>
     <tr>
       <th>4</th>
       <td>12 to 15</td>
       <td>all</td>
       <td>25</td>
-      <td>99</td>
+      <td>97</td>
       <td>0.27</td>
-      <td>137</td>
-      <td>5.96</td>
+      <td>139</td>
+      <td>6.04</td>
     </tr>
     <tr>
       <th>5</th>
       <td>15 to 20</td>
       <td>all</td>
-      <td>32</td>
+      <td>34</td>
       <td>157</td>
       <td>0.43</td>
-      <td>112</td>
-      <td>4.87</td>
+      <td>114</td>
+      <td>4.96</td>
     </tr>
     <tr>
       <th>6</th>
@@ -13444,17 +13444,17 @@ Current Drop % from ATH -11.76 %
       <td>16057.440430</td>
       <td>2021-11-19</td>
       <td>NaT</td>
-      <td>12581.219727</td>
-      <td>2022-03-14</td>
+      <td>12334.639648</td>
+      <td>2022-04-29</td>
       <td>NaN</td>
-      <td>115</td>
-      <td>21.65</td>
+      <td>161</td>
+      <td>23.18</td>
       <td>2021</td>
       <td>True</td>
       <td>16057</td>
       <td>2021-11-19</td>
-      <td>12581</td>
-      <td>2022-03-14</td>
+      <td>12334</td>
+      <td>2022-04-29</td>
     </tr>
     <tr>
       <th>4</th>
@@ -13642,6 +13642,317 @@ Current Drop % from ATH -11.76 %
       <td>2019-07-26</td>
       <td>7726</td>
       <td>2019-08-05</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+<span class="ansi-bold">### Largest % Drops within unique Cycles
+</span></pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>before_dip_close</th>
+      <th>before_dip_date</th>
+      <th>recovery_date</th>
+      <th>low_during_dip_close</th>
+      <th>low_during_dip_date</th>
+      <th>ATH_recovery_time_days</th>
+      <th>days_until_low</th>
+      <th>drop_%</th>
+      <th>year</th>
+      <th>new_ATH</th>
+      <th>ATH_close</th>
+      <th>ATH_date</th>
+      <th>Low_close</th>
+      <th>Low_date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5048.620117</td>
+      <td>2000-03-10</td>
+      <td>2015-04-23</td>
+      <td>1114.109985</td>
+      <td>2002-10-09</td>
+      <td>5522.0</td>
+      <td>943</td>
+      <td>77.93</td>
+      <td>2000</td>
+      <td>True</td>
+      <td>5048</td>
+      <td>2000-03-10</td>
+      <td>1114</td>
+      <td>2002-10-09</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2859.120117</td>
+      <td>2007-10-31</td>
+      <td>2011-04-27</td>
+      <td>1268.640015</td>
+      <td>2009-03-09</td>
+      <td>1274.0</td>
+      <td>495</td>
+      <td>55.63</td>
+      <td>2007</td>
+      <td>False</td>
+      <td>2859</td>
+      <td>2007-10-31</td>
+      <td>1268</td>
+      <td>2009-03-09</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>9817.179688</td>
+      <td>2020-02-19</td>
+      <td>2020-06-08</td>
+      <td>6860.669922</td>
+      <td>2020-03-23</td>
+      <td>110.0</td>
+      <td>33</td>
+      <td>30.12</td>
+      <td>2020</td>
+      <td>True</td>
+      <td>9817</td>
+      <td>2020-02-19</td>
+      <td>6860</td>
+      <td>2020-03-23</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2308.500000</td>
+      <td>2001-02-26</td>
+      <td>2001-05-22</td>
+      <td>1638.800049</td>
+      <td>2001-04-04</td>
+      <td>85.0</td>
+      <td>37</td>
+      <td>29.01</td>
+      <td>2001</td>
+      <td>False</td>
+      <td>2308</td>
+      <td>2001-02-26</td>
+      <td>1638</td>
+      <td>2001-04-04</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1982.250000</td>
+      <td>2001-08-13</td>
+      <td>2001-12-05</td>
+      <td>1423.189941</td>
+      <td>2001-09-21</td>
+      <td>114.0</td>
+      <td>39</td>
+      <td>28.20</td>
+      <td>2001</td>
+      <td>False</td>
+      <td>1982</td>
+      <td>2001-08-13</td>
+      <td>1423</td>
+      <td>2001-09-21</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>8109.689941</td>
+      <td>2018-08-29</td>
+      <td>2019-04-23</td>
+      <td>6192.919922</td>
+      <td>2018-12-24</td>
+      <td>237.0</td>
+      <td>117</td>
+      <td>23.64</td>
+      <td>2018</td>
+      <td>True</td>
+      <td>8109</td>
+      <td>2018-08-29</td>
+      <td>6192</td>
+      <td>2018-12-24</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>16057.440430</td>
+      <td>2021-11-19</td>
+      <td>NaT</td>
+      <td>12334.639648</td>
+      <td>2022-04-29</td>
+      <td>NaN</td>
+      <td>161</td>
+      <td>23.18</td>
+      <td>2021</td>
+      <td>True</td>
+      <td>16057</td>
+      <td>2021-11-19</td>
+      <td>12334</td>
+      <td>2022-04-29</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1647.400024</td>
+      <td>2008-11-07</td>
+      <td>2009-01-06</td>
+      <td>1316.119995</td>
+      <td>2008-11-20</td>
+      <td>60.0</td>
+      <td>13</td>
+      <td>20.11</td>
+      <td>2008</td>
+      <td>False</td>
+      <td>1647</td>
+      <td>2008-11-07</td>
+      <td>1316</td>
+      <td>2008-11-20</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>3958.080078</td>
+      <td>2000-05-01</td>
+      <td>2000-06-19</td>
+      <td>3164.550049</td>
+      <td>2000-05-23</td>
+      <td>49.0</td>
+      <td>22</td>
+      <td>20.05</td>
+      <td>2000</td>
+      <td>False</td>
+      <td>3958</td>
+      <td>2000-05-01</td>
+      <td>3164</td>
+      <td>2000-05-23</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2873.540039</td>
+      <td>2011-04-29</td>
+      <td>2012-02-03</td>
+      <td>2335.830078</td>
+      <td>2011-10-03</td>
+      <td>280.0</td>
+      <td>157</td>
+      <td>18.71</td>
+      <td>2011</td>
+      <td>False</td>
+      <td>2873</td>
+      <td>2011-04-29</td>
+      <td>2335</td>
+      <td>2011-10-03</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2153.830078</td>
+      <td>2004-01-26</td>
+      <td>2004-12-14</td>
+      <td>1752.489990</td>
+      <td>2004-08-12</td>
+      <td>323.0</td>
+      <td>199</td>
+      <td>18.63</td>
+      <td>2004</td>
+      <td>False</td>
+      <td>2153</td>
+      <td>2004-01-26</td>
+      <td>1752</td>
+      <td>2004-08-12</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>5218.859863</td>
+      <td>2015-07-20</td>
+      <td>2016-08-05</td>
+      <td>4266.839844</td>
+      <td>2016-02-11</td>
+      <td>382.0</td>
+      <td>206</td>
+      <td>18.24</td>
+      <td>2015</td>
+      <td>True</td>
+      <td>5218</td>
+      <td>2015-07-20</td>
+      <td>4266</td>
+      <td>2016-02-11</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2530.149902</td>
+      <td>2010-04-23</td>
+      <td>2010-11-02</td>
+      <td>2091.790039</td>
+      <td>2010-07-02</td>
+      <td>193.0</td>
+      <td>70</td>
+      <td>17.33</td>
+      <td>2010</td>
+      <td>False</td>
+      <td>2530</td>
+      <td>2010-04-23</td>
+      <td>2091</td>
+      <td>2010-07-02</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1770.030029</td>
+      <td>2008-10-20</td>
+      <td>2008-11-04</td>
+      <td>1505.900024</td>
+      <td>2008-10-27</td>
+      <td>15.0</td>
+      <td>7</td>
+      <td>14.92</td>
+      <td>2008</td>
+      <td>False</td>
+      <td>1770</td>
+      <td>2008-10-20</td>
+      <td>1505</td>
+      <td>2008-10-27</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>2370.879883</td>
+      <td>2006-04-19</td>
+      <td>2006-10-26</td>
+      <td>2020.390015</td>
+      <td>2006-07-21</td>
+      <td>190.0</td>
+      <td>93</td>
+      <td>14.78</td>
+      <td>2006</td>
+      <td>False</td>
+      <td>2370</td>
+      <td>2006-04-19</td>
+      <td>2020</td>
+      <td>2006-07-21</td>
     </tr>
   </tbody>
 </table>
@@ -14161,21 +14472,21 @@ Current Drop % from ATH -11.76 %
       <th>0</th>
       <td>15 to 20</td>
       <td>all</td>
-      <td>32</td>
+      <td>34</td>
       <td>157</td>
       <td>0.43</td>
-      <td>112</td>
-      <td>4.87</td>
+      <td>114</td>
+      <td>4.96</td>
     </tr>
     <tr>
       <th>1</th>
       <td>15 to 20</td>
       <td>2022</td>
-      <td>2</td>
+      <td>4</td>
       <td>0</td>
       <td>NaN</td>
-      <td>81</td>
-      <td>81.00</td>
+      <td>82</td>
+      <td>82.00</td>
     </tr>
     <tr>
       <th>2</th>
@@ -14184,8 +14495,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>35</td>
       <td>0.10</td>
-      <td>81</td>
-      <td>81.00</td>
+      <td>82</td>
+      <td>82.00</td>
     </tr>
     <tr>
       <th>3</th>
@@ -14194,8 +14505,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>125</td>
       <td>0.34</td>
-      <td>83</td>
-      <td>83.00</td>
+      <td>84</td>
+      <td>84.00</td>
     </tr>
     <tr>
       <th>4</th>
@@ -14204,8 +14515,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>267</td>
       <td>0.73</td>
-      <td>85</td>
-      <td>85.00</td>
+      <td>86</td>
+      <td>86.00</td>
     </tr>
     <tr>
       <th>5</th>
@@ -14214,8 +14525,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>215</td>
       <td>0.59</td>
-      <td>87</td>
-      <td>87.00</td>
+      <td>88</td>
+      <td>88.00</td>
     </tr>
     <tr>
       <th>6</th>
@@ -14224,8 +14535,8 @@ Current Drop % from ATH -11.76 %
       <td>3</td>
       <td>185</td>
       <td>0.51</td>
-      <td>89</td>
-      <td>89.00</td>
+      <td>90</td>
+      <td>90.00</td>
     </tr>
     <tr>
       <th>7</th>
@@ -14234,8 +14545,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>39</td>
       <td>0.11</td>
-      <td>89</td>
-      <td>89.00</td>
+      <td>90</td>
+      <td>90.00</td>
     </tr>
     <tr>
       <th>8</th>
@@ -14244,8 +14555,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>50</td>
       <td>0.14</td>
-      <td>90</td>
-      <td>90.00</td>
+      <td>91</td>
+      <td>91.00</td>
     </tr>
     <tr>
       <th>9</th>
@@ -14254,8 +14565,8 @@ Current Drop % from ATH -11.76 %
       <td>5</td>
       <td>261</td>
       <td>0.72</td>
-      <td>92</td>
-      <td>92.00</td>
+      <td>93</td>
+      <td>93.00</td>
     </tr>
     <tr>
       <th>10</th>
@@ -14264,8 +14575,8 @@ Current Drop % from ATH -11.76 %
       <td>3</td>
       <td>59</td>
       <td>0.16</td>
-      <td>94</td>
-      <td>94.00</td>
+      <td>95</td>
+      <td>95.00</td>
     </tr>
     <tr>
       <th>11</th>
@@ -14274,8 +14585,8 @@ Current Drop % from ATH -11.76 %
       <td>3</td>
       <td>29</td>
       <td>0.08</td>
-      <td>95</td>
-      <td>95.00</td>
+      <td>96</td>
+      <td>96.00</td>
     </tr>
     <tr>
       <th>12</th>
@@ -14284,8 +14595,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>31</td>
       <td>0.08</td>
-      <td>96</td>
-      <td>96.00</td>
+      <td>97</td>
+      <td>97.00</td>
     </tr>
   </tbody>
 </table>
@@ -14331,20 +14642,20 @@ Current Drop % from ATH -11.76 %
       <td>12 to 15</td>
       <td>all</td>
       <td>25</td>
-      <td>99</td>
+      <td>97</td>
       <td>0.27</td>
-      <td>137</td>
-      <td>5.96</td>
+      <td>139</td>
+      <td>6.04</td>
     </tr>
     <tr>
       <th>1</th>
       <td>12 to 15</td>
       <td>2022</td>
       <td>1</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>112</td>
-      <td>112.00</td>
+      <td>48</td>
+      <td>0.13</td>
+      <td>114</td>
+      <td>114.00</td>
     </tr>
     <tr>
       <th>2</th>
@@ -14353,8 +14664,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>24</td>
       <td>0.07</td>
-      <td>113</td>
-      <td>113.00</td>
+      <td>115</td>
+      <td>115.00</td>
     </tr>
     <tr>
       <th>3</th>
@@ -14363,8 +14674,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>46</td>
       <td>0.13</td>
-      <td>114</td>
-      <td>114.00</td>
+      <td>116</td>
+      <td>116.00</td>
     </tr>
     <tr>
       <th>4</th>
@@ -14373,8 +14684,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>88</td>
       <td>0.24</td>
-      <td>114</td>
-      <td>114.00</td>
+      <td>116</td>
+      <td>116.00</td>
     </tr>
     <tr>
       <th>5</th>
@@ -14383,8 +14694,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>90</td>
       <td>0.25</td>
-      <td>115</td>
-      <td>115.00</td>
+      <td>117</td>
+      <td>117.00</td>
     </tr>
     <tr>
       <th>6</th>
@@ -14393,8 +14704,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>164</td>
       <td>0.45</td>
-      <td>115</td>
-      <td>115.00</td>
+      <td>117</td>
+      <td>117.00</td>
     </tr>
     <tr>
       <th>7</th>
@@ -14403,8 +14714,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>82</td>
       <td>0.22</td>
-      <td>116</td>
-      <td>116.00</td>
+      <td>118</td>
+      <td>118.00</td>
     </tr>
     <tr>
       <th>8</th>
@@ -14413,8 +14724,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>154</td>
       <td>0.42</td>
-      <td>116</td>
-      <td>116.00</td>
+      <td>118</td>
+      <td>118.00</td>
     </tr>
     <tr>
       <th>9</th>
@@ -14423,8 +14734,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>21</td>
       <td>0.06</td>
-      <td>117</td>
-      <td>117.00</td>
+      <td>119</td>
+      <td>119.00</td>
     </tr>
     <tr>
       <th>10</th>
@@ -14433,8 +14744,8 @@ Current Drop % from ATH -11.76 %
       <td>3</td>
       <td>82</td>
       <td>0.23</td>
-      <td>118</td>
-      <td>118.00</td>
+      <td>120</td>
+      <td>120.00</td>
     </tr>
     <tr>
       <th>11</th>
@@ -14443,8 +14754,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>173</td>
       <td>0.48</td>
-      <td>119</td>
-      <td>119.00</td>
+      <td>121</td>
+      <td>121.00</td>
     </tr>
     <tr>
       <th>12</th>
@@ -14453,8 +14764,8 @@ Current Drop % from ATH -11.76 %
       <td>3</td>
       <td>179</td>
       <td>0.49</td>
-      <td>121</td>
-      <td>121.00</td>
+      <td>123</td>
+      <td>123.00</td>
     </tr>
     <tr>
       <th>13</th>
@@ -14463,8 +14774,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>99</td>
       <td>0.27</td>
-      <td>121</td>
-      <td>121.00</td>
+      <td>123</td>
+      <td>123.00</td>
     </tr>
     <tr>
       <th>14</th>
@@ -14473,8 +14784,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>95</td>
       <td>0.26</td>
-      <td>123</td>
-      <td>123.00</td>
+      <td>125</td>
+      <td>125.00</td>
     </tr>
     <tr>
       <th>15</th>
@@ -14483,8 +14794,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>29</td>
       <td>0.08</td>
-      <td>124</td>
-      <td>124.00</td>
+      <td>126</td>
+      <td>126.00</td>
     </tr>
   </tbody>
 </table>
@@ -14529,21 +14840,21 @@ Current Drop % from ATH -11.76 %
       <th>0</th>
       <td>9 to 12</td>
       <td>all</td>
-      <td>36</td>
+      <td>39</td>
       <td>80</td>
       <td>0.22</td>
-      <td>173</td>
-      <td>7.52</td>
+      <td>178</td>
+      <td>7.74</td>
     </tr>
     <tr>
       <th>1</th>
       <td>9 to 12</td>
       <td>2022</td>
-      <td>1</td>
+      <td>4</td>
       <td>37</td>
       <td>0.10</td>
-      <td>137</td>
-      <td>137.00</td>
+      <td>141</td>
+      <td>141.00</td>
     </tr>
     <tr>
       <th>2</th>
@@ -14552,8 +14863,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>61</td>
       <td>0.17</td>
-      <td>138</td>
-      <td>138.00</td>
+      <td>142</td>
+      <td>142.00</td>
     </tr>
     <tr>
       <th>3</th>
@@ -14562,8 +14873,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>84</td>
       <td>0.23</td>
-      <td>139</td>
-      <td>139.00</td>
+      <td>142</td>
+      <td>142.00</td>
     </tr>
     <tr>
       <th>4</th>
@@ -14572,8 +14883,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>61</td>
       <td>0.17</td>
-      <td>139</td>
-      <td>139.00</td>
+      <td>143</td>
+      <td>143.00</td>
     </tr>
     <tr>
       <th>5</th>
@@ -14582,8 +14893,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>63</td>
       <td>0.17</td>
-      <td>140</td>
-      <td>140.00</td>
+      <td>144</td>
+      <td>144.00</td>
     </tr>
     <tr>
       <th>6</th>
@@ -14592,8 +14903,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>78</td>
       <td>0.21</td>
-      <td>141</td>
-      <td>141.00</td>
+      <td>145</td>
+      <td>145.00</td>
     </tr>
     <tr>
       <th>7</th>
@@ -14602,8 +14913,8 @@ Current Drop % from ATH -11.76 %
       <td>8</td>
       <td>132</td>
       <td>0.36</td>
-      <td>145</td>
-      <td>145.00</td>
+      <td>149</td>
+      <td>149.00</td>
     </tr>
     <tr>
       <th>8</th>
@@ -14612,8 +14923,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>59</td>
       <td>0.16</td>
-      <td>147</td>
-      <td>147.00</td>
+      <td>151</td>
+      <td>151.00</td>
     </tr>
     <tr>
       <th>9</th>
@@ -14622,8 +14933,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>108</td>
       <td>0.30</td>
-      <td>148</td>
-      <td>148.00</td>
+      <td>152</td>
+      <td>152.00</td>
     </tr>
     <tr>
       <th>10</th>
@@ -14632,8 +14943,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>45</td>
       <td>0.12</td>
-      <td>149</td>
-      <td>149.00</td>
+      <td>153</td>
+      <td>153.00</td>
     </tr>
     <tr>
       <th>11</th>
@@ -14642,8 +14953,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>74</td>
       <td>0.20</td>
-      <td>150</td>
-      <td>150.00</td>
+      <td>153</td>
+      <td>153.00</td>
     </tr>
     <tr>
       <th>12</th>
@@ -14652,8 +14963,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>181</td>
       <td>0.50</td>
-      <td>151</td>
-      <td>151.00</td>
+      <td>154</td>
+      <td>154.00</td>
     </tr>
     <tr>
       <th>13</th>
@@ -14662,8 +14973,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>89</td>
       <td>0.24</td>
-      <td>152</td>
-      <td>152.00</td>
+      <td>155</td>
+      <td>155.00</td>
     </tr>
     <tr>
       <th>14</th>
@@ -14672,8 +14983,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>16</td>
       <td>0.04</td>
-      <td>152</td>
-      <td>152.00</td>
+      <td>156</td>
+      <td>156.00</td>
     </tr>
     <tr>
       <th>15</th>
@@ -14682,8 +14993,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>11</td>
       <td>0.03</td>
-      <td>153</td>
-      <td>153.00</td>
+      <td>156</td>
+      <td>156.00</td>
     </tr>
     <tr>
       <th>16</th>
@@ -14692,8 +15003,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>16</td>
       <td>0.05</td>
-      <td>155</td>
-      <td>155.00</td>
+      <td>158</td>
+      <td>158.00</td>
     </tr>
   </tbody>
 </table>
@@ -14741,8 +15052,8 @@ Current Drop % from ATH -11.76 %
       <td>91</td>
       <td>38</td>
       <td>0.11</td>
-      <td>264</td>
-      <td>11.48</td>
+      <td>269</td>
+      <td>11.7</td>
     </tr>
     <tr>
       <th>1</th>
@@ -14751,8 +15062,8 @@ Current Drop % from ATH -11.76 %
       <td>1</td>
       <td>16</td>
       <td>0.04</td>
-      <td>173</td>
-      <td>173.00</td>
+      <td>178</td>
+      <td>178.0</td>
     </tr>
     <tr>
       <th>2</th>
@@ -14761,8 +15072,8 @@ Current Drop % from ATH -11.76 %
       <td>6</td>
       <td>42</td>
       <td>0.12</td>
-      <td>176</td>
-      <td>176.00</td>
+      <td>181</td>
+      <td>181.0</td>
     </tr>
     <tr>
       <th>3</th>
@@ -14771,8 +15082,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>15</td>
       <td>0.04</td>
-      <td>177</td>
-      <td>177.00</td>
+      <td>182</td>
+      <td>182.0</td>
     </tr>
     <tr>
       <th>4</th>
@@ -14781,8 +15092,8 @@ Current Drop % from ATH -11.76 %
       <td>3</td>
       <td>56</td>
       <td>0.16</td>
-      <td>179</td>
-      <td>179.00</td>
+      <td>184</td>
+      <td>184.0</td>
     </tr>
     <tr>
       <th>5</th>
@@ -14791,8 +15102,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>43</td>
       <td>0.12</td>
-      <td>181</td>
-      <td>181.00</td>
+      <td>186</td>
+      <td>186.0</td>
     </tr>
     <tr>
       <th>6</th>
@@ -14801,8 +15112,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>31</td>
       <td>0.09</td>
-      <td>183</td>
-      <td>183.00</td>
+      <td>188</td>
+      <td>188.0</td>
     </tr>
     <tr>
       <th>7</th>
@@ -14811,8 +15122,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>25</td>
       <td>0.07</td>
-      <td>184</td>
-      <td>184.00</td>
+      <td>189</td>
+      <td>189.0</td>
     </tr>
     <tr>
       <th>8</th>
@@ -14821,8 +15132,8 @@ Current Drop % from ATH -11.76 %
       <td>8</td>
       <td>62</td>
       <td>0.17</td>
-      <td>188</td>
-      <td>188.00</td>
+      <td>193</td>
+      <td>193.0</td>
     </tr>
     <tr>
       <th>9</th>
@@ -14831,8 +15142,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>55</td>
       <td>0.15</td>
-      <td>190</td>
-      <td>190.00</td>
+      <td>195</td>
+      <td>195.0</td>
     </tr>
     <tr>
       <th>10</th>
@@ -14841,8 +15152,8 @@ Current Drop % from ATH -11.76 %
       <td>7</td>
       <td>39</td>
       <td>0.11</td>
-      <td>193</td>
-      <td>193.00</td>
+      <td>198</td>
+      <td>198.0</td>
     </tr>
     <tr>
       <th>11</th>
@@ -14851,8 +15162,8 @@ Current Drop % from ATH -11.76 %
       <td>3</td>
       <td>32</td>
       <td>0.09</td>
-      <td>195</td>
-      <td>195.00</td>
+      <td>200</td>
+      <td>200.0</td>
     </tr>
     <tr>
       <th>12</th>
@@ -14861,8 +15172,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>20</td>
       <td>0.06</td>
-      <td>197</td>
-      <td>197.00</td>
+      <td>202</td>
+      <td>202.0</td>
     </tr>
     <tr>
       <th>13</th>
@@ -14871,8 +15182,8 @@ Current Drop % from ATH -11.76 %
       <td>6</td>
       <td>28</td>
       <td>0.08</td>
-      <td>200</td>
-      <td>200.00</td>
+      <td>205</td>
+      <td>205.0</td>
     </tr>
     <tr>
       <th>14</th>
@@ -14881,8 +15192,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>51</td>
       <td>0.14</td>
-      <td>202</td>
-      <td>202.00</td>
+      <td>207</td>
+      <td>207.0</td>
     </tr>
     <tr>
       <th>15</th>
@@ -14891,8 +15202,8 @@ Current Drop % from ATH -11.76 %
       <td>3</td>
       <td>68</td>
       <td>0.19</td>
-      <td>203</td>
-      <td>203.00</td>
+      <td>208</td>
+      <td>208.0</td>
     </tr>
     <tr>
       <th>16</th>
@@ -14901,8 +15212,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>80</td>
       <td>0.22</td>
-      <td>205</td>
-      <td>205.00</td>
+      <td>210</td>
+      <td>210.0</td>
     </tr>
     <tr>
       <th>17</th>
@@ -14911,8 +15222,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>41</td>
       <td>0.11</td>
-      <td>207</td>
-      <td>207.00</td>
+      <td>212</td>
+      <td>212.0</td>
     </tr>
     <tr>
       <th>18</th>
@@ -14921,8 +15232,8 @@ Current Drop % from ATH -11.76 %
       <td>5</td>
       <td>34</td>
       <td>0.09</td>
-      <td>210</td>
-      <td>210.00</td>
+      <td>215</td>
+      <td>215.0</td>
     </tr>
     <tr>
       <th>19</th>
@@ -14931,8 +15242,8 @@ Current Drop % from ATH -11.76 %
       <td>7</td>
       <td>17</td>
       <td>0.05</td>
-      <td>213</td>
-      <td>213.00</td>
+      <td>218</td>
+      <td>218.0</td>
     </tr>
     <tr>
       <th>20</th>
@@ -14941,8 +15252,8 @@ Current Drop % from ATH -11.76 %
       <td>7</td>
       <td>15</td>
       <td>0.04</td>
-      <td>217</td>
-      <td>217.00</td>
+      <td>222</td>
+      <td>222.0</td>
     </tr>
     <tr>
       <th>21</th>
@@ -14951,8 +15262,8 @@ Current Drop % from ATH -11.76 %
       <td>3</td>
       <td>11</td>
       <td>0.03</td>
-      <td>218</td>
-      <td>218.00</td>
+      <td>223</td>
+      <td>223.0</td>
     </tr>
   </tbody>
 </table>
@@ -14997,21 +15308,21 @@ Current Drop % from ATH -11.76 %
       <th>0</th>
       <td>3 to 6</td>
       <td>all</td>
-      <td>203</td>
+      <td>205</td>
       <td>17</td>
       <td>0.05</td>
-      <td>467</td>
-      <td>20.3</td>
+      <td>474</td>
+      <td>20.61</td>
     </tr>
     <tr>
       <th>1</th>
       <td>3 to 6</td>
       <td>2022</td>
-      <td>3</td>
+      <td>5</td>
       <td>7</td>
       <td>0.02</td>
-      <td>265</td>
-      <td>265.0</td>
+      <td>271</td>
+      <td>271.00</td>
     </tr>
     <tr>
       <th>2</th>
@@ -15020,8 +15331,8 @@ Current Drop % from ATH -11.76 %
       <td>11</td>
       <td>16</td>
       <td>0.05</td>
-      <td>271</td>
-      <td>271.0</td>
+      <td>277</td>
+      <td>277.00</td>
     </tr>
     <tr>
       <th>3</th>
@@ -15030,8 +15341,8 @@ Current Drop % from ATH -11.76 %
       <td>15</td>
       <td>9</td>
       <td>0.03</td>
-      <td>278</td>
-      <td>278.0</td>
+      <td>284</td>
+      <td>284.00</td>
     </tr>
     <tr>
       <th>4</th>
@@ -15040,8 +15351,8 @@ Current Drop % from ATH -11.76 %
       <td>11</td>
       <td>20</td>
       <td>0.06</td>
-      <td>284</td>
-      <td>284.0</td>
+      <td>290</td>
+      <td>290.00</td>
     </tr>
     <tr>
       <th>5</th>
@@ -15050,8 +15361,8 @@ Current Drop % from ATH -11.76 %
       <td>9</td>
       <td>16</td>
       <td>0.05</td>
-      <td>288</td>
-      <td>288.0</td>
+      <td>294</td>
+      <td>294.00</td>
     </tr>
     <tr>
       <th>6</th>
@@ -15060,8 +15371,8 @@ Current Drop % from ATH -11.76 %
       <td>2</td>
       <td>38</td>
       <td>0.10</td>
-      <td>289</td>
-      <td>289.0</td>
+      <td>295</td>
+      <td>295.00</td>
     </tr>
     <tr>
       <th>7</th>
@@ -15070,8 +15381,8 @@ Current Drop % from ATH -11.76 %
       <td>7</td>
       <td>34</td>
       <td>0.09</td>
-      <td>293</td>
-      <td>293.0</td>
+      <td>299</td>
+      <td>299.00</td>
     </tr>
     <tr>
       <th>8</th>
@@ -15080,8 +15391,8 @@ Current Drop % from ATH -11.76 %
       <td>7</td>
       <td>23</td>
       <td>0.06</td>
-      <td>296</td>
-      <td>296.0</td>
+      <td>302</td>
+      <td>302.00</td>
     </tr>
     <tr>
       <th>9</th>
@@ -15090,8 +15401,8 @@ Current Drop % from ATH -11.76 %
       <td>12</td>
       <td>24</td>
       <td>0.07</td>
-      <td>302</td>
-      <td>302.0</td>
+      <td>308</td>
+      <td>308.00</td>
     </tr>
     <tr>
       <th>10</th>
@@ -15100,8 +15411,8 @@ Current Drop % from ATH -11.76 %
       <td>9</td>
       <td>23</td>
       <td>0.06</td>
-      <td>307</td>
-      <td>307.0</td>
+      <td>313</td>
+      <td>313.00</td>
     </tr>
     <tr>
       <th>11</th>
@@ -15110,8 +15421,8 @@ Current Drop % from ATH -11.76 %
       <td>7</td>
       <td>18</td>
       <td>0.05</td>
-      <td>310</td>
-      <td>310.0</td>
+      <td>316</td>
+      <td>316.00</td>
     </tr>
     <tr>
       <th>12</th>
@@ -15120,8 +15431,8 @@ Current Drop % from ATH -11.76 %
       <td>8</td>
       <td>17</td>
       <td>0.05</td>
-      <td>314</td>
-      <td>314.0</td>
+      <td>320</td>
+      <td>320.00</td>
     </tr>
     <tr>
       <th>13</th>
@@ -15130,8 +15441,8 @@ Current Drop % from ATH -11.76 %
       <td>7</td>
       <td>17</td>
       <td>0.05</td>
-      <td>318</td>
-      <td>318.0</td>
+      <td>324</td>
+      <td>324.00</td>
     </tr>
     <tr>
       <th>14</th>
@@ -15140,8 +15451,8 @@ Current Drop % from ATH -11.76 %
       <td>16</td>
       <td>13</td>
       <td>0.04</td>
-      <td>326</td>
-      <td>326.0</td>
+      <td>332</td>
+      <td>332.00</td>
     </tr>
     <tr>
       <th>15</th>
@@ -15150,8 +15461,8 @@ Current Drop % from ATH -11.76 %
       <td>14</td>
       <td>10</td>
       <td>0.03</td>
-      <td>333</td>
-      <td>333.0</td>
+      <td>339</td>
+      <td>339.00</td>
     </tr>
     <tr>
       <th>16</th>
@@ -15160,8 +15471,8 @@ Current Drop % from ATH -11.76 %
       <td>6</td>
       <td>16</td>
       <td>0.05</td>
-      <td>336</td>
-      <td>336.0</td>
+      <td>342</td>
+      <td>342.00</td>
     </tr>
     <tr>
       <th>17</th>
@@ -15170,8 +15481,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>54</td>
       <td>0.15</td>
-      <td>338</td>
-      <td>338.0</td>
+      <td>344</td>
+      <td>344.00</td>
     </tr>
     <tr>
       <th>18</th>
@@ -15180,8 +15491,8 @@ Current Drop % from ATH -11.76 %
       <td>4</td>
       <td>39</td>
       <td>0.11</td>
-      <td>340</td>
-      <td>340.0</td>
+      <td>346</td>
+      <td>346.00</td>
     </tr>
     <tr>
       <th>19</th>
@@ -15190,8 +15501,8 @@ Current Drop % from ATH -11.76 %
       <td>6</td>
       <td>14</td>
       <td>0.04</td>
-      <td>343</td>
-      <td>343.0</td>
+      <td>349</td>
+      <td>349.00</td>
     </tr>
     <tr>
       <th>20</th>
@@ -15200,8 +15511,8 @@ Current Drop % from ATH -11.76 %
       <td>17</td>
       <td>17</td>
       <td>0.05</td>
-      <td>351</td>
-      <td>351.0</td>
+      <td>357</td>
+      <td>357.00</td>
     </tr>
     <tr>
       <th>21</th>
@@ -15210,8 +15521,8 @@ Current Drop % from ATH -11.76 %
       <td>11</td>
       <td>7</td>
       <td>0.02</td>
-      <td>357</td>
-      <td>357.0</td>
+      <td>363</td>
+      <td>363.00</td>
     </tr>
     <tr>
       <th>22</th>
@@ -15220,8 +15531,8 @@ Current Drop % from ATH -11.76 %
       <td>10</td>
       <td>10</td>
       <td>0.03</td>
-      <td>362</td>
-      <td>362.0</td>
+      <td>368</td>
+      <td>368.00</td>
     </tr>
     <tr>
       <th>23</th>
@@ -15230,8 +15541,8 @@ Current Drop % from ATH -11.76 %
       <td>7</td>
       <td>7</td>
       <td>0.02</td>
-      <td>365</td>
-      <td>365.0</td>
+      <td>371</td>
+      <td>371.00</td>
     </tr>
   </tbody>
 </table>
@@ -15279,18 +15590,18 @@ Current Drop % from ATH -11.76 %
       <td>947</td>
       <td>5</td>
       <td>0.02</td>
-      <td>1414</td>
-      <td>61.48</td>
+      <td>1421</td>
+      <td>61.78</td>
     </tr>
     <tr>
       <th>1</th>
       <td>0 to 3</td>
       <td>2022</td>
       <td>6</td>
-      <td>2</td>
+      <td>3</td>
       <td>0.01</td>
-      <td>470</td>
-      <td>470.00</td>
+      <td>477</td>
+      <td>477.00</td>
     </tr>
     <tr>
       <th>2</th>
@@ -15299,8 +15610,8 @@ Current Drop % from ATH -11.76 %
       <td>42</td>
       <td>5</td>
       <td>0.01</td>
-      <td>491</td>
-      <td>491.00</td>
+      <td>498</td>
+      <td>498.00</td>
     </tr>
     <tr>
       <th>3</th>
@@ -15309,8 +15620,8 @@ Current Drop % from ATH -11.76 %
       <td>46</td>
       <td>4</td>
       <td>0.01</td>
-      <td>514</td>
-      <td>514.00</td>
+      <td>521</td>
+      <td>521.00</td>
     </tr>
     <tr>
       <th>4</th>
@@ -15319,8 +15630,8 @@ Current Drop % from ATH -11.76 %
       <td>46</td>
       <td>4</td>
       <td>0.01</td>
-      <td>537</td>
-      <td>537.00</td>
+      <td>544</td>
+      <td>544.00</td>
     </tr>
     <tr>
       <th>5</th>
@@ -15329,8 +15640,8 @@ Current Drop % from ATH -11.76 %
       <td>40</td>
       <td>4</td>
       <td>0.01</td>
-      <td>557</td>
-      <td>557.00</td>
+      <td>564</td>
+      <td>564.00</td>
     </tr>
     <tr>
       <th>6</th>
@@ -15339,8 +15650,8 @@ Current Drop % from ATH -11.76 %
       <td>65</td>
       <td>6</td>
       <td>0.02</td>
-      <td>589</td>
-      <td>589.00</td>
+      <td>596</td>
+      <td>596.00</td>
     </tr>
     <tr>
       <th>7</th>
@@ -15349,8 +15660,8 @@ Current Drop % from ATH -11.76 %
       <td>56</td>
       <td>5</td>
       <td>0.02</td>
-      <td>617</td>
-      <td>617.00</td>
+      <td>624</td>
+      <td>624.00</td>
     </tr>
     <tr>
       <th>8</th>
@@ -15359,8 +15670,8 @@ Current Drop % from ATH -11.76 %
       <td>45</td>
       <td>5</td>
       <td>0.02</td>
-      <td>640</td>
-      <td>640.00</td>
+      <td>647</td>
+      <td>647.00</td>
     </tr>
     <tr>
       <th>9</th>
@@ -15369,8 +15680,8 @@ Current Drop % from ATH -11.76 %
       <td>46</td>
       <td>5</td>
       <td>0.02</td>
-      <td>663</td>
-      <td>663.00</td>
+      <td>670</td>
+      <td>670.00</td>
     </tr>
     <tr>
       <th>10</th>
@@ -15379,8 +15690,8 @@ Current Drop % from ATH -11.76 %
       <td>56</td>
       <td>5</td>
       <td>0.02</td>
-      <td>691</td>
-      <td>691.00</td>
+      <td>698</td>
+      <td>698.00</td>
     </tr>
     <tr>
       <th>11</th>
@@ -15389,8 +15700,8 @@ Current Drop % from ATH -11.76 %
       <td>41</td>
       <td>5</td>
       <td>0.02</td>
-      <td>711</td>
-      <td>711.00</td>
+      <td>718</td>
+      <td>718.00</td>
     </tr>
     <tr>
       <th>12</th>
@@ -15399,8 +15710,8 @@ Current Drop % from ATH -11.76 %
       <td>35</td>
       <td>5</td>
       <td>0.01</td>
-      <td>729</td>
-      <td>729.00</td>
+      <td>736</td>
+      <td>736.00</td>
     </tr>
     <tr>
       <th>13</th>
@@ -15409,8 +15720,8 @@ Current Drop % from ATH -11.76 %
       <td>40</td>
       <td>5</td>
       <td>0.01</td>
-      <td>749</td>
-      <td>749.00</td>
+      <td>756</td>
+      <td>756.00</td>
     </tr>
     <tr>
       <th>14</th>
@@ -15419,8 +15730,8 @@ Current Drop % from ATH -11.76 %
       <td>39</td>
       <td>4</td>
       <td>0.01</td>
-      <td>768</td>
-      <td>768.00</td>
+      <td>775</td>
+      <td>775.00</td>
     </tr>
     <tr>
       <th>15</th>
@@ -15429,8 +15740,8 @@ Current Drop % from ATH -11.76 %
       <td>28</td>
       <td>4</td>
       <td>0.01</td>
-      <td>782</td>
-      <td>782.00</td>
+      <td>789</td>
+      <td>789.00</td>
     </tr>
     <tr>
       <th>16</th>
@@ -15439,8 +15750,8 @@ Current Drop % from ATH -11.76 %
       <td>53</td>
       <td>6</td>
       <td>0.02</td>
-      <td>809</td>
-      <td>809.00</td>
+      <td>816</td>
+      <td>816.00</td>
     </tr>
     <tr>
       <th>17</th>
@@ -15449,8 +15760,8 @@ Current Drop % from ATH -11.76 %
       <td>50</td>
       <td>7</td>
       <td>0.02</td>
-      <td>834</td>
-      <td>834.00</td>
+      <td>841</td>
+      <td>841.00</td>
     </tr>
     <tr>
       <th>18</th>
@@ -15459,8 +15770,8 @@ Current Drop % from ATH -11.76 %
       <td>56</td>
       <td>8</td>
       <td>0.02</td>
-      <td>862</td>
-      <td>862.00</td>
+      <td>869</td>
+      <td>869.00</td>
     </tr>
     <tr>
       <th>19</th>
@@ -15469,8 +15780,8 @@ Current Drop % from ATH -11.76 %
       <td>46</td>
       <td>5</td>
       <td>0.01</td>
-      <td>885</td>
-      <td>885.00</td>
+      <td>892</td>
+      <td>892.00</td>
     </tr>
     <tr>
       <th>20</th>
@@ -15479,8 +15790,8 @@ Current Drop % from ATH -11.76 %
       <td>44</td>
       <td>4</td>
       <td>0.01</td>
-      <td>907</td>
-      <td>907.00</td>
+      <td>914</td>
+      <td>914.00</td>
     </tr>
     <tr>
       <th>21</th>
@@ -15489,8 +15800,8 @@ Current Drop % from ATH -11.76 %
       <td>19</td>
       <td>3</td>
       <td>0.01</td>
-      <td>916</td>
-      <td>916.00</td>
+      <td>923</td>
+      <td>923.00</td>
     </tr>
     <tr>
       <th>22</th>
@@ -15499,8 +15810,8 @@ Current Drop % from ATH -11.76 %
       <td>24</td>
       <td>4</td>
       <td>0.01</td>
-      <td>928</td>
-      <td>928.00</td>
+      <td>935</td>
+      <td>935.00</td>
     </tr>
     <tr>
       <th>23</th>
@@ -15509,8 +15820,8 @@ Current Drop % from ATH -11.76 %
       <td>24</td>
       <td>4</td>
       <td>0.01</td>
-      <td>940</td>
-      <td>940.00</td>
+      <td>947</td>
+      <td>947.00</td>
     </tr>
   </tbody>
 </table>
@@ -15524,6 +15835,21 @@ Current Drop % from ATH -11.76 %
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook avg_dips_per_year_1.ipynb to html
+[NbConvertApp] Writing 323754 bytes to ../../GitHub/tommybetz.github.io/average_dips_per_year/average_dips_per_year_NASDAQComposite.html
+</pre>
+</div>
+</div>
+
+</div>
+</div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
