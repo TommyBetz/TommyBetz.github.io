@@ -13142,7 +13142,7 @@ div#notebook {
 <div class="output_subarea output_stream output_stdout output_text">
 <pre><span class="ansi-bold"># The Effect of Federal Reserve Interest Rate Changes on the Stock Market
 </span>## What happens to the Stock Market before and after the Federal Reserve changes their interest rates
-## Last updated: 2022-04-29
+## Last updated: 2022-05-20
 </pre>
 </div>
 </div>
@@ -13199,6 +13199,7 @@ div#notebook {
       <th>Rate_new</th>
       <th>12M_inflation</th>
       <th>VIX</th>
+      <th>Stock_Price</th>
       <th>52W_high</th>
       <th>52W_low</th>
       <th>1M_before</th>
@@ -13218,20 +13219,21 @@ div#notebook {
   <tbody>
     <tr>
       <th>0</th>
-      <td>2022-04-29</td>
+      <td>2022-05-20</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>8.50%</td>
-      <td>33.40</td>
-      <td>-13.9%</td>
-      <td>1.7%</td>
-      <td>-10.8%</td>
-      <td>-5.5%</td>
-      <td>-6.8%</td>
+      <td>8.3%</td>
+      <td>29.43</td>
+      <td>3901.36</td>
+      <td>-18.7%</td>
+      <td>0.0%</td>
+      <td>-12.5%</td>
+      <td>-12.6%</td>
       <td>-10.3%</td>
-      <td>-1.9%</td>
-      <td>40.6%</td>
+      <td>-17.0%</td>
+      <td>-6.2%</td>
+      <td>31.3%</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -13241,12 +13243,37 @@ div#notebook {
     </tr>
     <tr>
       <th>1</th>
+      <td>2022-05-05</td>
+      <td>Increase</td>
+      <td>0.50%</td>
+      <td>1.00%</td>
+      <td>8.3%</td>
+      <td>31.20</td>
+      <td>4146.87</td>
+      <td>-13.5%</td>
+      <td>2.1%</td>
+      <td>-8.4%</td>
+      <td>-4.2%</td>
+      <td>-7.9%</td>
+      <td>-11.7%</td>
+      <td>-0.5%</td>
+      <td>44.6%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
       <td>2022-03-17</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.50%</td>
       <td>8.50%</td>
       <td>25.67</td>
+      <td>4411.67</td>
       <td>-8.0%</td>
       <td>13.4%</td>
       <td>0.7%</td>
@@ -13256,20 +13283,21 @@ div#notebook {
       <td>11.0%</td>
       <td>74.4%</td>
       <td>-0.4%</td>
-      <td>NaN</td>
+      <td>-7.3%</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>2</th>
+      <th>3</th>
       <td>2020-03-16</td>
       <td>Decrease</td>
       <td>-1.00%</td>
       <td>0.25%</td>
       <td>1.50%</td>
       <td>82.69</td>
+      <td>2386.13</td>
       <td>-29.5%</td>
       <td>0.0%</td>
       <td>-29.4%</td>
@@ -13286,13 +13314,14 @@ div#notebook {
       <td>82.6%</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th>4</th>
       <td>2020-03-03</td>
       <td>Decrease</td>
       <td>-0.50%</td>
       <td>1.25%</td>
       <td>1.50%</td>
       <td>36.82</td>
+      <td>3003.37</td>
       <td>-11.3%</td>
       <td>9.5%</td>
       <td>-7.6%</td>
@@ -13309,13 +13338,14 @@ div#notebook {
       <td>45.3%</td>
     </tr>
     <tr>
-      <th>4</th>
+      <th>5</th>
       <td>2019-10-31</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>1.75%</td>
       <td>1.80%</td>
       <td>13.22</td>
+      <td>3037.56</td>
       <td>-0.3%</td>
       <td>29.2%</td>
       <td>2.0%</td>
@@ -13332,13 +13362,14 @@ div#notebook {
       <td>51.6%</td>
     </tr>
     <tr>
-      <th>5</th>
+      <th>6</th>
       <td>2019-09-19</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>2.00%</td>
       <td>1.70%</td>
       <td>14.05</td>
+      <td>3006.79</td>
       <td>-0.6%</td>
       <td>27.9%</td>
       <td>2.8%</td>
@@ -13355,13 +13386,14 @@ div#notebook {
       <td>47.4%</td>
     </tr>
     <tr>
-      <th>6</th>
+      <th>7</th>
       <td>2019-08-01</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>2.25%</td>
       <td>1.70%</td>
       <td>17.87</td>
+      <td>2953.56</td>
       <td>-2.4%</td>
       <td>25.6%</td>
       <td>-0.4%</td>
@@ -13378,13 +13410,14 @@ div#notebook {
       <td>48.8%</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>8</th>
       <td>2018-12-20</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.50%</td>
       <td>1.90%</td>
       <td>28.38</td>
+      <td>2467.42</td>
       <td>-15.8%</td>
       <td>0.0%</td>
       <td>-6.6%</td>
@@ -13401,13 +13434,14 @@ div#notebook {
       <td>50.3%</td>
     </tr>
     <tr>
-      <th>8</th>
+      <th>9</th>
       <td>2018-09-27</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.25%</td>
       <td>2.30%</td>
       <td>12.41</td>
+      <td>2914.00</td>
       <td>-0.6%</td>
       <td>16.1%</td>
       <td>0.6%</td>
@@ -13424,13 +13458,14 @@ div#notebook {
       <td>13.2%</td>
     </tr>
     <tr>
-      <th>9</th>
+      <th>10</th>
       <td>2018-06-14</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.00%</td>
       <td>2.90%</td>
       <td>12.12</td>
+      <td>2782.49</td>
       <td>-3.1%</td>
       <td>15.5%</td>
       <td>1.9%</td>
@@ -13447,13 +13482,14 @@ div#notebook {
       <td>9.3%</td>
     </tr>
     <tr>
-      <th>10</th>
+      <th>11</th>
       <td>2018-03-22</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.75%</td>
       <td>2.40%</td>
       <td>23.34</td>
+      <td>2643.69</td>
       <td>-8.0%</td>
       <td>13.5%</td>
       <td>-2.2%</td>
@@ -13470,13 +13506,14 @@ div#notebook {
       <td>-12.8%</td>
     </tr>
     <tr>
-      <th>11</th>
+      <th>12</th>
       <td>2017-12-14</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.50%</td>
       <td>2.10%</td>
       <td>10.49</td>
+      <td>2652.01</td>
       <td>-0.5%</td>
       <td>18.5%</td>
       <td>2.8%</td>
@@ -13493,13 +13530,14 @@ div#notebook {
       <td>19.5%</td>
     </tr>
     <tr>
-      <th>12</th>
+      <th>13</th>
       <td>2017-06-05</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.25%</td>
       <td>1.60%</td>
       <td>10.07</td>
+      <td>2436.10</td>
       <td>-0.1%</td>
       <td>21.8%</td>
       <td>1.5%</td>
@@ -13516,13 +13554,14 @@ div#notebook {
       <td>16.0%</td>
     </tr>
     <tr>
-      <th>13</th>
+      <th>14</th>
       <td>2017-03-16</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.00%</td>
       <td>2.40%</td>
       <td>11.21</td>
+      <td>2381.38</td>
       <td>-0.6%</td>
       <td>19.0%</td>
       <td>1.5%</td>
@@ -13539,13 +13578,14 @@ div#notebook {
       <td>18.5%</td>
     </tr>
     <tr>
-      <th>14</th>
+      <th>15</th>
       <td>2016-12-15</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.75%</td>
       <td>2.10%</td>
       <td>12.79</td>
+      <td>2262.03</td>
       <td>-0.4%</td>
       <td>23.7%</td>
       <td>3.7%</td>
@@ -13562,13 +13602,14 @@ div#notebook {
       <td>14.9%</td>
     </tr>
     <tr>
-      <th>15</th>
+      <th>16</th>
       <td>2015-12-17</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.50%</td>
       <td>0.70%</td>
       <td>18.94</td>
+      <td>2041.89</td>
       <td>-4.2%</td>
       <td>9.3%</td>
       <td>-0.4%</td>
@@ -13629,6 +13670,7 @@ div#notebook {
       <th>Rate_new</th>
       <th>12M_inflation</th>
       <th>VIX</th>
+      <th>Stock_Price</th>
       <th>52W_high</th>
       <th>52W_low</th>
       <th>1M_before</th>
@@ -13648,20 +13690,21 @@ div#notebook {
   <tbody>
     <tr>
       <th>0</th>
-      <td>2022-04-29</td>
+      <td>2022-05-20</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>8.50%</td>
-      <td>33.40</td>
-      <td>-23.2%</td>
+      <td>8.3%</td>
+      <td>29.43</td>
+      <td>11354.62</td>
+      <td>-29.3%</td>
       <td>0.0%</td>
       <td>-15.6%</td>
-      <td>-10.3%</td>
-      <td>-10.4%</td>
-      <td>-20.4%</td>
-      <td>-12.4%</td>
-      <td>38.4%</td>
+      <td>-18.3%</td>
+      <td>-16.2%</td>
+      <td>-29.3%</td>
+      <td>-16.1%</td>
+      <td>21.1%</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -13671,12 +13714,37 @@ div#notebook {
     </tr>
     <tr>
       <th>1</th>
+      <td>2022-05-05</td>
+      <td>Increase</td>
+      <td>0.50%</td>
+      <td>1.00%</td>
+      <td>8.3%</td>
+      <td>31.20</td>
+      <td>12317.69</td>
+      <td>-23.3%</td>
+      <td>0.0%</td>
+      <td>-13.3%</td>
+      <td>-7.5%</td>
+      <td>-12.6%</td>
+      <td>-22.9%</td>
+      <td>-9.3%</td>
+      <td>39.8%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
       <td>2022-03-17</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.50%</td>
       <td>8.50%</td>
       <td>25.67</td>
+      <td>13614.78</td>
       <td>-15.2%</td>
       <td>8.2%</td>
       <td>-0.7%</td>
@@ -13686,20 +13754,21 @@ div#notebook {
       <td>0.7%</td>
       <td>85.6%</td>
       <td>-1.9%</td>
-      <td>NaN</td>
+      <td>-12.0%</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>2</th>
+      <th>3</th>
       <td>2020-03-16</td>
       <td>Decrease</td>
       <td>-1.00%</td>
       <td>0.25%</td>
       <td>1.50%</td>
       <td>82.69</td>
+      <td>6904.59</td>
       <td>-29.7%</td>
       <td>0.0%</td>
       <td>-29.0%</td>
@@ -13716,13 +13785,14 @@ div#notebook {
       <td>94.6%</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th>4</th>
       <td>2020-03-03</td>
       <td>Decrease</td>
       <td>-0.50%</td>
       <td>1.25%</td>
       <td>1.50%</td>
       <td>36.82</td>
+      <td>8684.09</td>
       <td>-11.5%</td>
       <td>18.4%</td>
       <td>-6.4%</td>
@@ -13739,13 +13809,14 @@ div#notebook {
       <td>55.9%</td>
     </tr>
     <tr>
-      <th>4</th>
+      <th>5</th>
       <td>2019-10-31</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>1.75%</td>
       <td>1.80%</td>
       <td>13.22</td>
+      <td>8292.36</td>
       <td>-0.5%</td>
       <td>33.9%</td>
       <td>3.7%</td>
@@ -13762,13 +13833,14 @@ div#notebook {
       <td>86.9%</td>
     </tr>
     <tr>
-      <th>5</th>
+      <th>6</th>
       <td>2019-09-19</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>2.00%</td>
       <td>1.70%</td>
       <td>14.05</td>
+      <td>8182.88</td>
       <td>-1.8%</td>
       <td>32.1%</td>
       <td>2.3%</td>
@@ -13785,13 +13857,14 @@ div#notebook {
       <td>83.8%</td>
     </tr>
     <tr>
-      <th>6</th>
+      <th>7</th>
       <td>2019-08-01</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>2.25%</td>
       <td>1.70%</td>
       <td>17.87</td>
+      <td>8111.12</td>
       <td>-2.6%</td>
       <td>31.0%</td>
       <td>0.2%</td>
@@ -13808,13 +13881,14 @@ div#notebook {
       <td>80.9%</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>8</th>
       <td>2018-12-20</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.50%</td>
       <td>1.90%</td>
       <td>28.38</td>
+      <td>6528.41</td>
       <td>-19.5%</td>
       <td>0.0%</td>
       <td>-5.5%</td>
@@ -13831,13 +13905,14 @@ div#notebook {
       <td>95.4%</td>
     </tr>
     <tr>
-      <th>8</th>
+      <th>9</th>
       <td>2018-09-27</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.25%</td>
       <td>2.30%</td>
       <td>12.41</td>
+      <td>8041.97</td>
       <td>-0.8%</td>
       <td>24.6%</td>
       <td>0.3%</td>
@@ -13854,13 +13929,14 @@ div#notebook {
       <td>35.7%</td>
     </tr>
     <tr>
-      <th>9</th>
+      <th>10</th>
       <td>2018-06-14</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.00%</td>
       <td>2.90%</td>
       <td>12.12</td>
+      <td>7761.04</td>
       <td>0.0%</td>
       <td>27.5%</td>
       <td>4.7%</td>
@@ -13877,13 +13953,14 @@ div#notebook {
       <td>23.6%</td>
     </tr>
     <tr>
-      <th>10</th>
+      <th>11</th>
       <td>2018-03-22</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.75%</td>
       <td>2.40%</td>
       <td>23.34</td>
+      <td>7166.68</td>
       <td>-5.6%</td>
       <td>23.5%</td>
       <td>-0.6%</td>
@@ -13900,13 +13977,14 @@ div#notebook {
       <td>-4.0%</td>
     </tr>
     <tr>
-      <th>11</th>
+      <th>12</th>
       <td>2017-12-14</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.50%</td>
       <td>2.10%</td>
       <td>10.49</td>
+      <td>6856.53</td>
       <td>-0.8%</td>
       <td>27.4%</td>
       <td>1.8%</td>
@@ -13923,13 +14001,14 @@ div#notebook {
       <td>27.4%</td>
     </tr>
     <tr>
-      <th>12</th>
+      <th>13</th>
       <td>2017-06-05</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.25%</td>
       <td>1.60%</td>
       <td>10.07</td>
+      <td>6295.68</td>
       <td>-0.2%</td>
       <td>37.0%</td>
       <td>3.2%</td>
@@ -13946,13 +14025,14 @@ div#notebook {
       <td>20.3%</td>
     </tr>
     <tr>
-      <th>13</th>
+      <th>14</th>
       <td>2017-03-16</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.00%</td>
       <td>2.40%</td>
       <td>11.21</td>
+      <td>5900.76</td>
       <td>-0.1%</td>
       <td>28.4%</td>
       <td>1.5%</td>
@@ -13969,13 +14049,14 @@ div#notebook {
       <td>30.3%</td>
     </tr>
     <tr>
-      <th>14</th>
+      <th>15</th>
       <td>2016-12-15</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.75%</td>
       <td>2.10%</td>
       <td>12.79</td>
+      <td>5456.85</td>
       <td>-0.1%</td>
       <td>27.9%</td>
       <td>3.4%</td>
@@ -13992,13 +14073,14 @@ div#notebook {
       <td>26.6%</td>
     </tr>
     <tr>
-      <th>15</th>
+      <th>16</th>
       <td>2015-12-17</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.50%</td>
       <td>0.70%</td>
       <td>18.94</td>
+      <td>5002.55</td>
       <td>-4.1%</td>
       <td>11.0%</td>
       <td>0.3%</td>
@@ -14059,6 +14141,7 @@ div#notebook {
       <th>Rate_new</th>
       <th>12M_inflation</th>
       <th>VIX</th>
+      <th>Stock_Price</th>
       <th>52W_high</th>
       <th>52W_low</th>
       <th>1M_before</th>
@@ -14078,20 +14161,21 @@ div#notebook {
   <tbody>
     <tr>
       <th>0</th>
-      <td>2022-04-29</td>
+      <td>2022-05-20</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>8.50%</td>
-      <td>33.40</td>
-      <td>-10.4%</td>
-      <td>1.1%</td>
-      <td>-6.6%</td>
-      <td>-2.7%</td>
-      <td>-5.0%</td>
-      <td>-7.9%</td>
-      <td>-3.2%</td>
-      <td>33.9%</td>
+      <td>8.3%</td>
+      <td>29.43</td>
+      <td>31261.90</td>
+      <td>-15.0%</td>
+      <td>0.0%</td>
+      <td>-11.1%</td>
+      <td>-10.1%</td>
+      <td>-8.3%</td>
+      <td>-12.2%</td>
+      <td>-8.3%</td>
+      <td>27.2%</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -14101,12 +14185,37 @@ div#notebook {
     </tr>
     <tr>
       <th>1</th>
+      <td>2022-05-05</td>
+      <td>Increase</td>
+      <td>0.50%</td>
+      <td>1.00%</td>
+      <td>8.3%</td>
+      <td>31.20</td>
+      <td>32997.97</td>
+      <td>-10.3%</td>
+      <td>1.1%</td>
+      <td>-4.7%</td>
+      <td>-1.8%</td>
+      <td>-6.0%</td>
+      <td>-9.2%</td>
+      <td>-3.6%</td>
+      <td>38.2%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
       <td>2022-03-17</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.50%</td>
       <td>8.50%</td>
       <td>25.67</td>
+      <td>34480.76</td>
       <td>-6.3%</td>
       <td>6.4%</td>
       <td>0.5%</td>
@@ -14116,20 +14225,21 @@ div#notebook {
       <td>4.4%</td>
       <td>62.4%</td>
       <td>-0.1%</td>
-      <td>NaN</td>
+      <td>-5.3%</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>2</th>
+      <th>3</th>
       <td>2020-03-16</td>
       <td>Decrease</td>
       <td>-1.00%</td>
       <td>0.25%</td>
       <td>1.50%</td>
       <td>82.69</td>
+      <td>20188.52</td>
       <td>-31.7%</td>
       <td>0.0%</td>
       <td>-31.3%</td>
@@ -14146,13 +14256,14 @@ div#notebook {
       <td>68.7%</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th>4</th>
       <td>2020-03-03</td>
       <td>Decrease</td>
       <td>-0.50%</td>
       <td>1.25%</td>
       <td>1.50%</td>
       <td>36.82</td>
+      <td>25917.41</td>
       <td>-12.3%</td>
       <td>4.4%</td>
       <td>-8.7%</td>
@@ -14169,13 +14280,14 @@ div#notebook {
       <td>30.4%</td>
     </tr>
     <tr>
-      <th>4</th>
+      <th>5</th>
       <td>2019-10-31</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>1.75%</td>
       <td>1.80%</td>
       <td>13.22</td>
+      <td>27046.23</td>
       <td>-1.1%</td>
       <td>24.1%</td>
       <td>0.5%</td>
@@ -14192,13 +14304,14 @@ div#notebook {
       <td>32.4%</td>
     </tr>
     <tr>
-      <th>5</th>
+      <th>6</th>
       <td>2019-09-19</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>2.00%</td>
       <td>1.70%</td>
       <td>14.05</td>
+      <td>27094.79</td>
       <td>-1.0%</td>
       <td>24.3%</td>
       <td>3.7%</td>
@@ -14215,13 +14328,14 @@ div#notebook {
       <td>27.6%</td>
     </tr>
     <tr>
-      <th>6</th>
+      <th>7</th>
       <td>2019-08-01</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>2.25%</td>
       <td>1.70%</td>
       <td>17.87</td>
+      <td>26583.42</td>
       <td>-2.8%</td>
       <td>22.0%</td>
       <td>-0.5%</td>
@@ -14238,13 +14352,14 @@ div#notebook {
       <td>31.4%</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>8</th>
       <td>2018-12-20</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.50%</td>
       <td>1.90%</td>
       <td>28.38</td>
+      <td>22859.60</td>
       <td>-14.8%</td>
       <td>0.0%</td>
       <td>-6.6%</td>
@@ -14261,13 +14376,14 @@ div#notebook {
       <td>32.0%</td>
     </tr>
     <tr>
-      <th>8</th>
+      <th>9</th>
       <td>2018-09-27</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.25%</td>
       <td>2.30%</td>
       <td>12.41</td>
+      <td>26439.93</td>
       <td>-1.1%</td>
       <td>18.1%</td>
       <td>1.5%</td>
@@ -14284,13 +14400,14 @@ div#notebook {
       <td>2.8%</td>
     </tr>
     <tr>
-      <th>9</th>
+      <th>10</th>
       <td>2018-06-14</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.00%</td>
       <td>2.90%</td>
       <td>12.12</td>
+      <td>25175.31</td>
       <td>-5.4%</td>
       <td>18.3%</td>
       <td>1.1%</td>
@@ -14307,13 +14424,14 @@ div#notebook {
       <td>1.7%</td>
     </tr>
     <tr>
-      <th>10</th>
+      <th>11</th>
       <td>2018-03-22</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.75%</td>
       <td>2.40%</td>
       <td>23.34</td>
+      <td>23957.89</td>
       <td>-10.0%</td>
       <td>17.4%</td>
       <td>-4.0%</td>
@@ -14330,13 +14448,14 @@ div#notebook {
       <td>-20.0%</td>
     </tr>
     <tr>
-      <th>11</th>
+      <th>12</th>
       <td>2017-12-14</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.50%</td>
       <td>2.10%</td>
       <td>10.49</td>
+      <td>24508.66</td>
       <td>-0.3%</td>
       <td>24.2%</td>
       <td>4.7%</td>
@@ -14353,13 +14472,14 @@ div#notebook {
       <td>14.8%</td>
     </tr>
     <tr>
-      <th>12</th>
+      <th>13</th>
       <td>2017-06-05</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.25%</td>
       <td>1.60%</td>
       <td>10.07</td>
+      <td>21184.04</td>
       <td>-0.1%</td>
       <td>23.6%</td>
       <td>0.8%</td>
@@ -14376,13 +14496,14 @@ div#notebook {
       <td>20.6%</td>
     </tr>
     <tr>
-      <th>13</th>
+      <th>14</th>
       <td>2017-03-16</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.00%</td>
       <td>2.40%</td>
       <td>11.21</td>
+      <td>20934.55</td>
       <td>-0.9%</td>
       <td>22.1%</td>
       <td>1.5%</td>
@@ -14399,13 +14520,14 @@ div#notebook {
       <td>23.5%</td>
     </tr>
     <tr>
-      <th>14</th>
+      <th>15</th>
       <td>2016-12-15</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.75%</td>
       <td>2.10%</td>
       <td>12.79</td>
+      <td>19852.24</td>
       <td>-0.3%</td>
       <td>26.8%</td>
       <td>4.9%</td>
@@ -14422,13 +14544,14 @@ div#notebook {
       <td>21.4%</td>
     </tr>
     <tr>
-      <th>15</th>
+      <th>16</th>
       <td>2015-12-17</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.50%</td>
       <td>0.70%</td>
       <td>18.94</td>
+      <td>17495.84</td>
       <td>-4.5%</td>
       <td>11.7%</td>
       <td>0.0%</td>
@@ -14489,6 +14612,7 @@ div#notebook {
       <th>Rate_new</th>
       <th>12M_inflation</th>
       <th>VIX</th>
+      <th>Stock_Price</th>
       <th>52W_high</th>
       <th>52W_low</th>
       <th>1M_before</th>
@@ -14508,20 +14632,21 @@ div#notebook {
   <tbody>
     <tr>
       <th>0</th>
-      <td>2022-04-29</td>
+      <td>2022-05-20</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>8.50%</td>
-      <td>33.40</td>
-      <td>-1.0%</td>
-      <td>145.9%</td>
-      <td>20.3%</td>
-      <td>57.0%</td>
-      <td>62.0%</td>
-      <td>85.4%</td>
-      <td>76.0%</td>
-      <td>360.4%</td>
+      <td>8.3%</td>
+      <td>29.43</td>
+      <td>2.79</td>
+      <td>-10.8%</td>
+      <td>137.4%</td>
+      <td>-1.9%</td>
+      <td>29.7%</td>
+      <td>44.3%</td>
+      <td>81.4%</td>
+      <td>70.6%</td>
+      <td>309.9%</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -14531,12 +14656,37 @@ div#notebook {
     </tr>
     <tr>
       <th>1</th>
+      <td>2022-05-05</td>
+      <td>Increase</td>
+      <td>0.50%</td>
+      <td>1.00%</td>
+      <td>8.3%</td>
+      <td>31.20</td>
+      <td>3.07</td>
+      <td>0.0%</td>
+      <td>161.2%</td>
+      <td>20.0%</td>
+      <td>77.8%</td>
+      <td>58.9%</td>
+      <td>111.0%</td>
+      <td>93.6%</td>
+      <td>366.7%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
       <td>2022-03-17</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.50%</td>
       <td>8.50%</td>
       <td>25.67</td>
+      <td>2.19</td>
       <td>0.0%</td>
       <td>86.7%</td>
       <td>11.2%</td>
@@ -14546,20 +14696,21 @@ div#notebook {
       <td>33.6%</td>
       <td>119.9%</td>
       <td>29.0%</td>
-      <td>NaN</td>
+      <td>35.4%</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>2</th>
+      <th>3</th>
       <td>2020-03-16</td>
       <td>Decrease</td>
       <td>-1.00%</td>
       <td>0.25%</td>
       <td>1.50%</td>
       <td>82.69</td>
+      <td>0.73</td>
       <td>-72.1%</td>
       <td>45.9%</td>
       <td>-54.2%</td>
@@ -14576,13 +14727,14 @@ div#notebook {
       <td>200.5%</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th>4</th>
       <td>2020-03-03</td>
       <td>Decrease</td>
       <td>-0.50%</td>
       <td>1.25%</td>
       <td>1.50%</td>
       <td>36.82</td>
+      <td>1.01</td>
       <td>-62.9%</td>
       <td>0.0%</td>
       <td>-33.6%</td>
@@ -14599,13 +14751,14 @@ div#notebook {
       <td>82.6%</td>
     </tr>
     <tr>
-      <th>4</th>
+      <th>5</th>
       <td>2019-10-31</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>1.75%</td>
       <td>1.80%</td>
       <td>13.22</td>
+      <td>1.69</td>
       <td>-47.7%</td>
       <td>15.9%</td>
       <td>1.0%</td>
@@ -14622,13 +14775,14 @@ div#notebook {
       <td>-7.9%</td>
     </tr>
     <tr>
-      <th>5</th>
+      <th>6</th>
       <td>2019-09-19</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>2.00%</td>
       <td>1.70%</td>
       <td>14.05</td>
+      <td>1.77</td>
       <td>-45.1%</td>
       <td>21.6%</td>
       <td>11.0%</td>
@@ -14645,13 +14799,14 @@ div#notebook {
       <td>-22.8%</td>
     </tr>
     <tr>
-      <th>6</th>
+      <th>7</th>
       <td>2019-08-01</td>
       <td>Decrease</td>
       <td>-0.25%</td>
       <td>2.25%</td>
       <td>1.70%</td>
       <td>17.87</td>
+      <td>1.89</td>
       <td>-41.4%</td>
       <td>0.0%</td>
       <td>-6.9%</td>
@@ -14668,13 +14823,14 @@ div#notebook {
       <td>-34.6%</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>8</th>
       <td>2018-12-20</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.50%</td>
       <td>1.90%</td>
       <td>28.38</td>
+      <td>2.79</td>
       <td>-13.8%</td>
       <td>16.0%</td>
       <td>-8.5%</td>
@@ -14691,13 +14847,14 @@ div#notebook {
       <td>-66.0%</td>
     </tr>
     <tr>
-      <th>8</th>
+      <th>9</th>
       <td>2018-09-27</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.25%</td>
       <td>2.30%</td>
       <td>12.41</td>
+      <td>3.06</td>
       <td>-1.7%</td>
       <td>34.0%</td>
       <td>7.3%</td>
@@ -14714,13 +14871,14 @@ div#notebook {
       <td>-78.4%</td>
     </tr>
     <tr>
-      <th>9</th>
+      <th>10</th>
       <td>2018-06-14</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>2.00%</td>
       <td>2.90%</td>
       <td>12.12</td>
+      <td>2.95</td>
       <td>-5.2%</td>
       <td>42.9%</td>
       <td>-1.6%</td>
@@ -14737,13 +14895,14 @@ div#notebook {
       <td>-76.3%</td>
     </tr>
     <tr>
-      <th>10</th>
+      <th>11</th>
       <td>2018-03-22</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.75%</td>
       <td>2.40%</td>
       <td>23.34</td>
+      <td>2.83</td>
       <td>-3.8%</td>
       <td>37.4%</td>
       <td>-2.9%</td>
@@ -14760,13 +14919,14 @@ div#notebook {
       <td>-66.9%</td>
     </tr>
     <tr>
-      <th>11</th>
+      <th>12</th>
       <td>2017-12-14</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.50%</td>
       <td>2.10%</td>
       <td>10.49</td>
+      <td>2.35</td>
       <td>-10.0%</td>
       <td>13.8%</td>
       <td>-1.5%</td>
@@ -14783,13 +14943,14 @@ div#notebook {
       <td>-22.5%</td>
     </tr>
     <tr>
-      <th>12</th>
+      <th>13</th>
       <td>2017-06-05</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.25%</td>
       <td>1.60%</td>
       <td>10.07</td>
+      <td>2.18</td>
       <td>-16.3%</td>
       <td>59.7%</td>
       <td>-7.2%</td>
@@ -14806,13 +14967,14 @@ div#notebook {
       <td>-2.7%</td>
     </tr>
     <tr>
-      <th>13</th>
+      <th>14</th>
       <td>2017-03-16</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>1.00%</td>
       <td>2.40%</td>
       <td>11.21</td>
+      <td>2.52</td>
       <td>-3.3%</td>
       <td>84.6%</td>
       <td>2.9%</td>
@@ -14829,13 +14991,14 @@ div#notebook {
       <td>2.8%</td>
     </tr>
     <tr>
-      <th>14</th>
+      <th>15</th>
       <td>2016-12-15</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.75%</td>
       <td>2.10%</td>
       <td>12.79</td>
+      <td>2.58</td>
       <td>0.0%</td>
       <td>88.9%</td>
       <td>15.3%</td>
@@ -14852,13 +15015,14 @@ div#notebook {
       <td>12.1%</td>
     </tr>
     <tr>
-      <th>15</th>
+      <th>16</th>
       <td>2015-12-17</td>
       <td>Increase</td>
       <td>0.25%</td>
       <td>0.50%</td>
       <td>0.70%</td>
       <td>18.94</td>
+      <td>2.24</td>
       <td>-9.7%</td>
       <td>33.8%</td>
       <td>-1.0%</td>
